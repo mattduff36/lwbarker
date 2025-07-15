@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --lwb-orange: #f97316;
+    --lwb-black: #020617;
+    --lwb-grey: #6b7280;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-lwb-orange-500 hover:bg-lwb-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-lwb-grey-500 hover:bg-lwb-grey-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .text-brand-orange {
+    @apply text-lwb-orange-500;
+  }
+  
+  .text-brand-black {
+    @apply text-lwb-black-950;
+  }
+  
+  .text-brand-grey {
+    @apply text-lwb-grey-500;
+  }
+} 
