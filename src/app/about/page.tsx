@@ -1,10 +1,34 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import { Shield, Target, Zap, Briefcase, Car, Truck, Construction, MapPin, Phone, Mail, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us | L.W. Barker Transport Services LTD',
-  description: 'Learn about L.W. Barker Transport Services LTD - professional flatbed transport solutions since our establishment',
+  title: 'About Us - Professional Transport Company Since Establishment',
+  description: 'Learn about L.W. Barker Transport Services LTD - a professional flatbed transport company providing reliable, safe, and efficient transport solutions across the UK with 24/7 service availability.',
+  keywords: ['about transport company', 'professional transport', 'reliable transport', 'UK transport company', 'flatbed transport company', 'transport services history', 'professional logistics'],
+  openGraph: {
+    title: 'About Us - Professional Transport Company Since Establishment',
+    description: 'Learn about L.W. Barker Transport Services LTD - a professional flatbed transport company providing reliable, safe, and efficient transport solutions across the UK.',
+    url: 'https://lwbarkertransport.com/about',
+    images: [
+      {
+        url: '/hero_bg4.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'L.W. Barker Transport Services - About Our Professional Transport Company',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us - Professional Transport Company Since Establishment',
+    description: 'Learn about L.W. Barker Transport Services LTD - a professional flatbed transport company providing reliable, safe, and efficient transport solutions across the UK.',
+    images: ['/hero_bg4.jpg'],
+  },
+  alternates: {
+    canonical: 'https://lwbarkertransport.com/about',
+  },
 }
 
 export default function AboutPage() {
@@ -17,22 +41,22 @@ export default function AboutPage() {
 
   const teamValues = [
     {
-      icon: '🛡️',
+      icon: Shield,
       title: 'Safety First',
       description: 'All our drivers are fully licensed and experienced, with excellent safety records and ongoing training.'
     },
     {
-      icon: '🎯',
+      icon: Target,
       title: 'Customer Focus',
       description: 'We work closely with our customers to understand their needs and provide tailored transport solutions.'
     },
     {
-      icon: '⚡',
+      icon: Zap,
       title: 'Efficiency',
       description: 'Quick response times and efficient routing ensure your goods are delivered on time, every time.'
     },
     {
-      icon: '💼',
+      icon: Briefcase,
       title: 'Professionalism',
       description: 'From initial quote to delivery, we maintain the highest standards of professional service.'
     }
@@ -42,8 +66,8 @@ export default function AboutPage() {
     <Layout>
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-brand-black mb-4">
-            About <span className="text-brand-orange">L.W. Barker</span>
+          <h1 className="text-4xl font-bold text-lwb-black-900 mb-4">
+            About <span className="text-lwb-orange-500">L.W. Barker</span>
           </h1>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
             Your trusted partner for complete flatbed transport solutions across the UK
@@ -119,7 +143,9 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {teamValues.map((value, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg border border-lwb-grey-200 shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-4xl mb-4">{value.icon}</div>
+                  <div className="text-lwb-orange-500 mb-4 flex justify-center">
+                    <value.icon size={48} />
+                  </div>
                   <h3 className="text-lg font-semibold text-brand-black mb-3">{value.title}</h3>
                   <p className="text-brand-grey text-sm leading-relaxed">{value.description}</p>
                 </div>
@@ -132,17 +158,23 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-brand-black mb-6 text-center">What We Offer</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl mb-4">🚛</div>
+                <div className="text-lwb-orange-500 mb-4 flex justify-center">
+                  <Car size={48} />
+                </div>
                 <h3 className="text-lg font-semibold text-brand-black mb-2">Local Transport</h3>
                 <p className="text-brand-grey text-sm">Quick deliveries within 50 miles using our 3.5t and 7.5t vehicles</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl mb-4">🚚</div>
+                <div className="text-lwb-orange-500 mb-4 flex justify-center">
+                  <Truck size={48} />
+                </div>
                 <h3 className="text-lg font-semibold text-brand-black mb-2">Long Distance</h3>
                 <p className="text-brand-grey text-sm">UK-wide transport with our 18t and 44t vehicles for maximum capacity</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl mb-4">🏗️</div>
+                <div className="text-lwb-orange-500 mb-4 flex justify-center">
+                  <Construction size={48} />
+                </div>
                 <h3 className="text-lg font-semibold text-brand-black mb-2">Specialized Loads</h3>
                 <p className="text-brand-grey text-sm">Expert handling of oversized and complex load requirements</p>
               </div>
@@ -162,26 +194,34 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-brand-black mb-6 text-center">Get In Touch</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-2xl mb-2">📍</div>
+                <div className="text-lwb-orange-500 mb-2 flex justify-center">
+                  <MapPin size={32} />
+                </div>
                 <h3 className="font-semibold text-brand-black mb-1">Location</h3>
                 <p className="text-brand-grey">NG24 1DW</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl mb-2">📞</div>
+                <div className="text-lwb-orange-500 mb-2 flex justify-center">
+                  <Phone size={32} />
+                </div>
                 <h3 className="font-semibold text-brand-black mb-1">Phone</h3>
                 <a href="tel:07967176567" className="text-brand-orange hover:text-lwb-orange-600">
                   07967 176567
                 </a>
               </div>
               <div className="text-center">
-                <div className="text-2xl mb-2">✉️</div>
+                <div className="text-lwb-orange-500 mb-2 flex justify-center">
+                  <Mail size={32} />
+                </div>
                 <h3 className="font-semibold text-brand-black mb-1">Email</h3>
                 <a href="mailto:lee@lwbarkertransport.com" className="text-brand-orange hover:text-lwb-orange-600">
                   lee@lwbarkertransport.com
                 </a>
               </div>
               <div className="text-center">
-                <div className="text-2xl mb-2">🌐</div>
+                <div className="text-lwb-orange-500 mb-2 flex justify-center">
+                  <Globe size={32} />
+                </div>
                 <h3 className="font-semibold text-brand-black mb-1">Website</h3>
                 <p className="text-brand-grey">lwbarkertransport.com</p>
               </div>
