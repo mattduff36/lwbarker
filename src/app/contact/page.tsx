@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Layout from '@/components/Layout'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact Us | L.W. Barker Transport Services LTD',
@@ -7,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <Layout>
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-brand-black mb-8 text-center">
           Contact <span className="text-brand-orange">Us</span>
@@ -76,103 +78,10 @@ export default function ContactPage() {
             </div>
             
             {/* Contact Form */}
-            <div className="bg-lwb-grey-50 p-8 rounded-lg border border-lwb-grey-200">
-              <h2 className="text-2xl font-semibold text-brand-black mb-6">Send us a Message</h2>
-              
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-brand-black mb-2">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-brand-black mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-brand-black mb-2">
-                    Phone *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-brand-black mb-2">
-                    Service Type (Optional)
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500"
-                  >
-                    <option value="">Select a service...</option>
-                    <option value="local">Local Transport</option>
-                    <option value="long-distance">Long Distance</option>
-                    <option value="specialized">Specialized Loads</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-brand-black mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500"
-                    placeholder="Please provide details about your transport needs..."
-                  ></textarea>
-                </div>
-                
-                <div>
-                  <label htmlFor="loadDetails" className="block text-sm font-medium text-brand-black mb-2">
-                    Load Details (Optional)
-                  </label>
-                  <textarea
-                    id="loadDetails"
-                    name="loadDetails"
-                    rows={3}
-                    className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500"
-                    placeholder="Size, weight, pickup/delivery locations, special requirements..."
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full btn-primary"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>
-    </main>
+    </Layout>
   )
 } 

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Layout from '@/components/Layout'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Transport Services | L.W. Barker Transport Services LTD',
@@ -6,39 +8,202 @@ export const metadata: Metadata = {
 }
 
 export default function ServicesPage() {
+  const services = [
+    {
+      title: 'Local Transport',
+      icon: '🚛',
+      description: 'Quick and reliable local transport services for your nearby delivery needs.',
+      features: [
+        'Same-day delivery available',
+        'Urban-friendly vehicles',
+        'Flexible scheduling',
+        'Cost-effective rates',
+        'Professional drivers',
+        'Secure handling'
+      ],
+      coverage: 'Local and regional coverage within 50 miles',
+      vehicles: '3.5ton van, 7.5ton truck',
+      suitableFor: [
+        'Construction supplies',
+        'Retail deliveries',
+        'Equipment transport',
+        'Small machinery',
+        'Commercial goods'
+      ]
+    },
+    {
+      title: 'Long Distance',
+      icon: '🚚',
+      description: 'Professional long-distance transport solutions across the UK.',
+      features: [
+        'UK-wide coverage',
+        'Tracked deliveries',
+        'Scheduled transport',
+        'Secure handling',
+        'Insurance coverage',
+        'Real-time updates'
+      ],
+      coverage: 'Nationwide UK coverage',
+      vehicles: '18ton truck, 44ton Arctic',
+      suitableFor: [
+        'Inter-city deliveries',
+        'Large construction projects',
+        'Heavy machinery',
+        'Commercial relocations',
+        'Industrial equipment'
+      ]
+    },
+    {
+      title: 'Specialized Loads',
+      icon: '🏗️',
+      description: 'Expert handling of specialized and oversized load transport.',
+      features: [
+        'Oversized load permits',
+        'Route planning',
+        'Escort services',
+        'Custom solutions',
+        'Safety compliance',
+        'Insurance coverage'
+      ],
+      coverage: 'UK-wide with route planning',
+      vehicles: '44ton Arctic with specialized equipment',
+      suitableFor: [
+        'Construction machinery',
+        'Industrial equipment',
+        'Prefabricated structures',
+        'Agricultural machinery',
+        'Abnormal loads'
+      ]
+    }
+  ];
+
   return (
-    <main className="min-h-screen bg-white">
+    <Layout>
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-brand-black mb-8 text-center">
-          Our <span className="text-brand-orange">Transport Services</span>
-        </h1>
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-brand-black mb-4">
+            Our <span className="text-brand-orange">Transport Services</span>
+          </h1>
+          <p className="text-lg text-brand-grey max-w-2xl mx-auto">
+            Complete flatbed transport solutions with professional service and reliable delivery. 
+            From local deliveries to specialized loads, we have the expertise and equipment to meet your needs.
+          </p>
+        </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mt-12">
-          <div className="bg-lwb-grey-50 p-6 rounded-lg border border-lwb-grey-200">
-            <h2 className="text-2xl font-semibold text-brand-black mb-4">Local Transport</h2>
-            <p className="text-brand-grey mb-4">
-              Quick and reliable local transport services for your nearby delivery needs.
+        <div className="space-y-12">
+          {services.map((service, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg border border-lwb-grey-200 overflow-hidden">
+              <div className="bg-lwb-grey-50 px-8 py-6 border-b border-lwb-grey-200">
+                <div className="flex items-center">
+                  <div className="text-4xl mr-4">{service.icon}</div>
+                  <div>
+                    <h2 className="text-3xl font-bold text-brand-black mb-2">{service.title}</h2>
+                    <p className="text-lg text-brand-grey">{service.description}</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <div>
+                    <h3 className="text-xl font-semibold text-brand-black mb-4">Key Features</h3>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start">
+                          <div className="w-2 h-2 bg-lwb-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span className="text-brand-grey">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-brand-black mb-4">Service Details</h3>
+                    <div className="space-y-3">
+                      <div>
+                        <h4 className="font-medium text-brand-black">Coverage:</h4>
+                        <p className="text-brand-grey">{service.coverage}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-brand-black">Vehicles:</h4>
+                        <p className="text-brand-grey">{service.vehicles}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-brand-black mb-4">Suitable For</h3>
+                    <ul className="space-y-2">
+                      {service.suitableFor.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-start">
+                          <div className="w-2 h-2 bg-lwb-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span className="text-brand-grey">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="mt-8 text-center">
+                  <Link href="/contact" className="btn-primary mr-4">
+                    Get Quote for {service.title}
+                  </Link>
+                  <Link href="/fleet" className="btn-secondary">
+                    View Fleet
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="mt-16 bg-lwb-grey-50 p-8 rounded-lg">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-brand-black mb-4">
+              Why Choose L.W. Barker Transport Services?
+            </h2>
+            <p className="text-brand-grey max-w-2xl mx-auto">
+              We pride ourselves on delivering professional, reliable transport solutions 
+              tailored to your specific needs.
             </p>
-            <button className="btn-primary">Contact for Quote</button>
           </div>
           
-          <div className="bg-lwb-grey-50 p-6 rounded-lg border border-lwb-grey-200">
-            <h2 className="text-2xl font-semibold text-brand-black mb-4">Long Distance</h2>
-            <p className="text-brand-grey mb-4">
-              Professional long-distance transport solutions across the UK.
-            </p>
-            <button className="btn-primary">Contact for Quote</button>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-3xl mb-4">🛡️</div>
+              <h3 className="text-lg font-semibold text-brand-black mb-2">Fully Insured</h3>
+              <p className="text-brand-grey">Comprehensive insurance coverage for your peace of mind</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl mb-4">⚡</div>
+              <h3 className="text-lg font-semibold text-brand-black mb-2">Fast Response</h3>
+              <p className="text-brand-grey">Quick quotes and efficient service delivery</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl mb-4">💼</div>
+              <h3 className="text-lg font-semibold text-brand-black mb-2">Professional Service</h3>
+              <p className="text-brand-grey">Experienced team with industry expertise</p>
+            </div>
           </div>
-          
-          <div className="bg-lwb-grey-50 p-6 rounded-lg border border-lwb-grey-200">
-            <h2 className="text-2xl font-semibold text-brand-black mb-4">Specialized Loads</h2>
-            <p className="text-brand-grey mb-4">
-              Expert handling of specialized and oversized load transport.
-            </p>
-            <button className="btn-primary">Contact for Quote</button>
+        </div>
+        
+        <div className="mt-12 text-center">
+          <h2 className="text-2xl font-bold text-brand-black mb-4">
+            Ready to Get Started?
+          </h2>
+          <p className="text-brand-grey mb-6">
+            Contact us today for a free quote on any of our transport services
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="btn-primary">
+              Get Free Quote
+            </Link>
+            <Link href="tel:07967176567" className="btn-secondary">
+              Call: 07967 176567
+            </Link>
           </div>
         </div>
       </div>
-    </main>
+    </Layout>
   )
 } 
