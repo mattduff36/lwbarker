@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import { Shield, Target, Zap, Briefcase, Car, Truck, Construction, MapPin, Phone, Mail, Globe } from 'lucide-react'
+import { Shield, Target, Zap, Briefcase, MapPin, Globe, Construction, Phone, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us - Professional Transport Company Since Establishment',
-  description: 'Learn about L.W. Barker Transport Services LTD - a professional flatbed transport company providing reliable, safe, and efficient transport solutions across the UK with 24/7 service availability.',
+  title: 'About Us - Professional Transport Company Since 2004',
+  description: 'Learn about L.W. Barker Transport Services LTD - a family-run flatbed transport company with 21 years of experience providing reliable, safe, and efficient transport solutions across the UK with 24/7 service availability.',
   keywords: ['about transport company', 'professional transport', 'reliable transport', 'UK transport company', 'flatbed transport company', 'transport services history', 'professional logistics'],
   openGraph: {
     title: 'About Us - Professional Transport Company Since Establishment',
@@ -33,32 +33,32 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const companyStats = [
-    { value: '24/7', label: 'Service Available' },
-    { value: 'UK-Wide', label: 'Coverage' },
-    { value: '4', label: 'Vehicle Types' },
-    { value: '44t', label: 'Max Capacity' }
+    { value: '21', label: 'Years Experience' },
+    { value: 'Multiple', label: 'Vehicles' },
+    { value: 'Skilled', label: 'Drivers' },
+    { value: '900k', label: 'Annual Miles' }
   ];
 
   const teamValues = [
     {
       icon: Shield,
-      title: 'Safety First',
-      description: 'All our drivers are fully licensed and experienced, with excellent safety records and ongoing training.'
+      title: 'Safety',
+      description: 'All our drivers are fully licensed and experienced, with excellent safety records and comprehensive insurance coverage.'
     },
     {
       icon: Target,
-      title: 'Customer Focus',
-      description: 'We work closely with our customers to understand their needs and provide tailored transport solutions.'
+      title: 'Reliability',
+      description: 'We pride ourselves on being reliable and punctual, ensuring your goods are delivered on time, every time.'
     },
     {
       icon: Zap,
-      title: 'Efficiency',
-      description: 'Quick response times and efficient routing ensure your goods are delivered on time, every time.'
+      title: 'Communication',
+      description: 'We maintain clear communication throughout the transport process, providing real-time updates by phone.'
     },
     {
       icon: Briefcase,
-      title: 'Professionalism',
-      description: 'From initial quote to delivery, we maintain the highest standards of professional service.'
+      title: 'Flexibility',
+      description: 'We\'ll sort it. Nothing is ever a problem - our flexible approach ensures we meet your specific requirements.'
     }
   ];
 
@@ -81,13 +81,12 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-brand-grey mb-6 leading-relaxed">
-                  Here at L W Barker Transport Services LTD we pride ourselves in being able to offer the complete 
-                  flatbed transport solutions, with a range of vehicles from a 3.5ton van up to a 44ton Arctic 
-                  we cover it all.
+                  L.W. Barker Transport Services is a family-run business started by Lee & Kelly Barker in 2004 with just one van.
+                  Our mission was simple: to provide reliable transport for the local and surrounding areas.
                 </p>
                 <p className="text-brand-grey leading-relaxed">
-                  Our commitment to excellence and customer satisfaction has made us a trusted partner for 
-                  businesses across the UK, providing reliable transport services for all types of loads.
+                  Today, with 21 years of experience, we've grown to operate a diverse fleet of vehicles and employ skilled drivers, covering hundreds of thousands of
+                  miles annually. We pride ourselves in offering complete flatbed transport solutions, from 3.5-ton vans to 44-ton articulated lorries.
                 </p>
               </div>
               <div className="text-center">
@@ -108,9 +107,8 @@ export default function AboutPage() {
             <div className="bg-white p-8 rounded-lg border border-lwb-grey-200 shadow-lg">
               <h3 className="text-2xl font-bold text-brand-black mb-4">Our Mission</h3>
               <p className="text-brand-grey leading-relaxed">
-                To provide reliable, professional flatbed transport services with a complete range of 
-                vehicles to meet all our customers' transport needs. We strive to be the go-to choice 
-                for businesses requiring efficient, safe, and cost-effective transport solutions.
+                "When you need something delivered, we're always on hand to say YES! We will NOT let you down."
+                We strive to be the go-to choice for businesses requiring efficient, safe, and reliable transport solutions.
               </p>
             </div>
             
@@ -119,19 +117,19 @@ export default function AboutPage() {
               <ul className="text-brand-grey space-y-2">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-lwb-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  Professional service at all times
+                  Safety as a core value
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-lwb-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  Reliable and timely delivery
+                  Reliability and punctuality
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-lwb-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  Complete customer satisfaction
+                  Clear communication with customers
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-lwb-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  Competitive and transparent pricing
+                  Flexibility to meet your needs
                 </li>
               </ul>
             </div>
@@ -159,14 +157,14 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-lwb-orange-500 mb-4 flex justify-center">
-                  <Car size={48} />
+                  <MapPin size={48} />
                 </div>
                 <h3 className="text-lg font-semibold text-brand-black mb-2">Local Transport</h3>
                 <p className="text-brand-grey text-sm">Quick deliveries within 50 miles using our 3.5t and 7.5t vehicles</p>
               </div>
               <div className="text-center">
                 <div className="text-lwb-orange-500 mb-4 flex justify-center">
-                  <Truck size={48} />
+                  <Globe size={48} />
                 </div>
                 <h3 className="text-lg font-semibold text-brand-black mb-2">Long Distance</h3>
                 <p className="text-brand-grey text-sm">UK-wide transport with our 18t and 44t vehicles for maximum capacity</p>
@@ -205,8 +203,8 @@ export default function AboutPage() {
                   <Phone size={32} />
                 </div>
                 <h3 className="font-semibold text-brand-black mb-1">Phone</h3>
-                <a href="tel:07967176567" className="text-brand-orange hover:text-lwb-orange-600">
-                  07967 176567
+                <a href="tel:01636402360" className="text-brand-orange hover:text-lwb-orange-600">
+                  01636 402360
                 </a>
               </div>
               <div className="text-center">

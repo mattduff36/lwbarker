@@ -2,28 +2,28 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Truck, Car, Construction } from 'lucide-react';
+import { MapPin, Globe, Construction } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesOverview: React.FC = () => {
   const services = [
     {
       title: 'Local Transport',
-      description: 'Quick and reliable local transport services for your nearby delivery needs. Perfect for urban areas and short-distance hauls.',
-      icon: Car,
-      features: ['Same-day delivery', 'Urban-friendly vehicles', 'Competitive rates', 'Professional drivers']
+      description: 'Quick and reliable local transport services handling single pallets to full Arctic loads with no restrictions on local deliveries.',
+      icon: MapPin,
+      features: ['Same-day delivery', 'No restrictions', 'Pricing based on application', 'Professional drivers']
     },
     {
       title: 'Long Distance',
-      description: 'Professional long-distance transport solutions across the UK. Nationwide coverage with tracked deliveries.',
-      icon: Truck,
-      features: ['UK-wide coverage', 'Tracked deliveries', 'Scheduled transport', 'Secure handling']
+      description: 'Professional long-distance transport solutions with UK-wide coverage and real-time updates by phone.',
+      icon: Globe,
+      features: ['UK-wide coverage', 'Updates by phone', 'Full transit insurance', 'No geographical limitations']
     },
     {
       title: 'Specialized Loads',
-      description: 'Expert handling of specialized and oversized load transport. Custom solutions for unique requirements.',
+      description: 'Expert handling of all types of specialized loads including abnormal loads with no weight or size limitations.',
       icon: Construction,
-      features: ['Oversized loads', 'Custom solutions', 'Expert handling', 'Safety compliance']
+      features: ['Abnormal loads', 'No size/weight limits', 'Specialized equipment', 'Escort services if required']
     }
   ];
 
@@ -35,7 +35,7 @@ const ServicesOverview: React.FC = () => {
             Our <span className="text-lwb-orange-500">Transport Services</span>
           </h2>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-            Complete flatbed transport solutions with vehicles from 3.5ton van to 44ton Arctic. 
+            Complete flatbed transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
             Whatever your transport needs, we have the right solution for you.
           </p>
         </AnimatedSection>

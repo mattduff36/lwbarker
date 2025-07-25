@@ -2,42 +2,42 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Car, Truck, Container, Anchor } from 'lucide-react';
+import { Box, Boxes, Container, Warehouse } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const FleetShowcase: React.FC = () => {
   const fleetVehicles = [
     {
       name: '3.5 Ton Van',
-      icon: Car,
-      capacity: 'Up to 3.5 tons',
-      description: 'Perfect for urban deliveries and smaller loads',
-      features: ['Urban friendly', 'Manoeuvrable', 'Cost-effective'],
-      suitable: 'Local deliveries, small machinery, construction supplies'
+      icon: Box,
+      capacity: 'Typical payload: 1.0 – 1.5 tonnes',
+      description: 'Versatile vans in both flatbed and box configurations',
+      features: ['Urban friendly', 'Versatile', 'Cost-effective'],
+      suitable: 'Various applications for local and regional transport'
     },
     {
-      name: '7.5 Ton Truck',
-      icon: Truck,
-      capacity: 'Up to 7.5 tons',
-      description: 'Mid-range capacity for regional transport',
-      features: ['Versatile', 'Reliable', 'Efficient'],
-      suitable: 'Medium loads, regional delivery, commercial goods'
+      name: '7.5 Ton Lorry',
+      icon: Boxes,
+      capacity: 'Typical payload: 3.5 – 4.5 tonnes',
+      description: 'Our flatbed lorries provide reliable mid-range capacity',
+      features: ['Flatbed design', 'Reliable', 'Efficient'],
+      suitable: 'Construction materials, commercial goods, steel, pallets'
     },
     {
-      name: '18 Ton Truck',
+      name: '18 Ton Lorry',
       icon: Container,
-      capacity: 'Up to 18 tons',
-      description: 'Heavy-duty transport for larger loads',
+      capacity: 'Typical payload: 10 – 11.5 tonnes',
+      description: 'Heavy-duty transport with our 18 ton lorries',
       features: ['Powerful', 'Durable', 'Professional'],
-      suitable: 'Construction materials, heavy machinery, large items'
+      suitable: 'Construction materials, heavy machinery, engineering loads'
     },
     {
       name: '44 Ton Arctic',
-      icon: Anchor,
-      capacity: 'Up to 44 tons',
-      description: 'Our flagship vehicle for maximum capacity',
+      icon: Warehouse,
+      capacity: 'Typical payload: 28 – 30 tonnes',
+      description: 'Arctic vehicles with specialized restraint systems',
       features: ['Maximum capacity', 'Long-distance', 'Specialized'],
-      suitable: 'Oversized loads, long-haul transport, specialized cargo'
+      suitable: 'Heavy loads up to 30 tonnes, specialized transport needs'
     }
   ];
 
@@ -115,7 +115,7 @@ const FleetShowcase: React.FC = () => {
             </div>
             <div className="text-center group">
               <div className="text-3xl font-bold text-lwb-orange-500 mb-2 group-hover:scale-110 transition-transform duration-300">Professional</div>
-              <div className="text-brand-grey">Trained Drivers</div>
+              <div className="text-brand-grey">Skilled Drivers</div>
             </div>
           </div>
           

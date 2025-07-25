@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'L.W. Barker Transport Services LTD | Professional Flatbed Transport',
     template: '%s | L.W. Barker Transport Services LTD'
   },
-  description: 'Professional flatbed transport solutions with vehicles from 3.5ton van to 44ton Arctic. Local, long distance and specialized transport services across the UK.',
+  description: 'Professional flatbed transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services across the UK.',
   keywords: ['flatbed transport', 'transport services', 'logistics', 'UK transport', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation', 'haulage services', 'delivery services'],
   authors: [{ name: 'L.W. Barker Transport Services LTD' }],
   creator: 'L.W. Barker Transport Services LTD',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: 'https://lwbarkertransport.com',
     siteName: 'L.W. Barker Transport Services LTD',
     title: 'L.W. Barker Transport Services LTD | Professional Flatbed Transport',
-    description: 'Professional flatbed transport solutions with vehicles from 3.5ton van to 44ton Arctic. Local, long distance and specialized transport services across the UK.',
+    description: 'Professional flatbed transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services across the UK.',
     images: [
       {
         url: '/LOGO.png',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'L.W. Barker Transport Services LTD | Professional Flatbed Transport',
-    description: 'Professional flatbed transport solutions with vehicles from 3.5ton van to 44ton Arctic. Local, long distance and specialized transport services across the UK.',
+    description: 'Professional flatbed transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services across the UK.',
     images: ['/LOGO.png'],
   },
   verification: {

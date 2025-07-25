@@ -6,9 +6,7 @@ interface ContactFormData {
   name: string;
   email: string;
   phone: string;
-  service: string;
   message: string;
-  loadDetails: string;
 }
 
 interface FormErrors {
@@ -23,21 +21,12 @@ const ContactForm: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    service: '',
-    message: '',
-    loadDetails: ''
+    message: ''
   });
   
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-  const serviceOptions = [
-    { value: '', label: 'Select a service' },
-    { value: 'local', label: 'Local Transport' },
-    { value: 'long-distance', label: 'Long Distance Transport' },
-    { value: 'specialized', label: 'Specialized Transport' },
-    { value: 'other', label: 'Other / Not Sure' }
-  ];
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
@@ -46,9 +35,8 @@ const ContactForm: React.FC = () => {
       newErrors.name = 'Name is required';
     }
     
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    // Email is optional
+    if (formData.email.trim() && !/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
     
@@ -106,9 +94,7 @@ const ContactForm: React.FC = () => {
         name: '',
         email: '',
         phone: '',
-        service: '',
-        message: '',
-        loadDetails: ''
+        message: ''
       });
       setSubmitStatus('success');
       
@@ -135,7 +121,8 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="bg-white p-8 rounded-lg border border-lwb-grey-200 shadow-lg">
-      <h2 className="text-2xl font-bold text-brand-black mb-6">Send us a Message</h2>
+      <h2 className="text-2xl font-bold text-brand-black mb-6">Request a Call Back</h2>
+      <p className="text-gray-600 mb-6">To request a call back, please fill out this form with your details.</p>
       
       {submitStatus === 'success' && (
         <div 
@@ -193,7 +180,7 @@ const ContactForm: React.FC = () => {
 
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-brand-black mb-2">
-            Email Address *
+            Email Address (optional)
           </label>
           <input
             type="email"
@@ -205,7 +192,7 @@ const ContactForm: React.FC = () => {
               errors.email ? 'border-red-500' : 'border-lwb-grey-300'
             }`}
             placeholder="your.email@example.com"
-            aria-required="true"
+            aria-required="false"
             aria-invalid={errors.email ? 'true' : 'false'}
             aria-describedby={errors.email ? 'email-error' : undefined}
           />
@@ -229,7 +216,7 @@ const ContactForm: React.FC = () => {
             className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500 transition-colors ${
               errors.phone ? 'border-red-500' : 'border-lwb-grey-300'
             }`}
-            placeholder="07967 176567"
+            placeholder="01636 402360"
             aria-required="true"
             aria-invalid={errors.phone ? 'true' : 'false'}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
@@ -241,28 +228,6 @@ const ContactForm: React.FC = () => {
           )}
         </div>
 
-        <div>
-          <label htmlFor="service" className="block text-sm font-medium text-brand-black mb-2">
-            Service Required
-          </label>
-          <select
-            id="service"
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500 transition-colors"
-            aria-describedby="service-help"
-          >
-            {serviceOptions.map(option => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-          <p id="service-help" className="mt-1 text-sm text-gray-600">
-            Select the type of transport service you need
-          </p>
-        </div>
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-brand-black mb-2">
@@ -289,29 +254,11 @@ const ContactForm: React.FC = () => {
           )}
           {!errors.message && (
             <p id="message-help" className="mt-1 text-sm text-gray-600">
-              Include pickup/delivery locations, load details, and any special requirements
+              Please provide details about your request and when you'd prefer to be contacted
             </p>
           )}
         </div>
 
-        <div>
-          <label htmlFor="loadDetails" className="block text-sm font-medium text-brand-black mb-2">
-            Load Details (Optional)
-          </label>
-          <textarea
-            id="loadDetails"
-            name="loadDetails"
-            value={formData.loadDetails}
-            onChange={handleChange}
-            rows={3}
-            className="w-full px-3 py-2 border border-lwb-grey-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:border-lwb-orange-500 transition-colors"
-            placeholder="Weight, dimensions, special handling requirements..."
-            aria-describedby="load-details-help"
-          />
-          <p id="load-details-help" className="mt-1 text-sm text-gray-600">
-            Help us provide a more accurate quote by including load specifications
-          </p>
-        </div>
 
         <button
           type="submit"
@@ -333,7 +280,7 @@ const ContactForm: React.FC = () => {
           )}
         </button>
         <p id="submit-help" className="text-sm text-gray-600 text-center">
-          We'll respond to your inquiry within 24 hours
+          We'll call you back as soon as possible
         </p>
       </form>
     </div>

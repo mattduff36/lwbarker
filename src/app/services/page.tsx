@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import StructuredData from '@/components/StructuredData'
-import { MapPin, Route, Construction, Shield, Zap, Briefcase } from 'lucide-react'
+import { MapPin, Globe, Construction, Shield, Zap, Briefcase } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Transport Services - Local, Long Distance & Specialized',
-  description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional flatbed solutions with vehicles from 3.5ton van to 44ton Arctic across the UK.',
+  description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional flatbed solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries across the UK.',
   keywords: ['transport services', 'local transport', 'long distance transport', 'specialized transport', 'flatbed delivery', 'UK haulage', 'logistics services', 'transport solutions', 'vehicle transportation'],
   openGraph: {
     title: 'Transport Services - Local, Long Distance & Specialized',
@@ -37,67 +37,67 @@ export default function ServicesPage() {
     {
       title: 'Local Transport',
       icon: MapPin,
-      description: 'Quick and reliable local transport services for your nearby delivery needs.',
+      description: 'Quick and reliable local transport services for single pallets to full Arctic loads with no restrictions.',
       features: [
         'Same-day delivery available',
-        'Urban-friendly vehicles',
+        'No restrictions on deliveries',
+        'Pricing based on application',
         'Flexible scheduling',
-        'Cost-effective rates',
         'Professional drivers',
         'Secure handling'
       ],
-      coverage: 'Local and regional coverage within 50 miles',
-      vehicles: '3.5ton van, 7.5ton truck',
+      coverage: 'Local and regional coverage',
+      vehicles: '3.5ton vans, 7.5ton lorries',
       suitableFor: [
-        'Construction supplies',
-        'Retail deliveries',
-        'Equipment transport',
-        'Small machinery',
-        'Commercial goods'
+        'Construction materials',
+        'Commercial goods',
+        'Steel/Pallets',
+        'Various applications',
+        'Single pallets to full loads'
       ]
     },
     {
       title: 'Long Distance',
-      icon: Route,
-      description: 'Professional long-distance transport solutions across the UK.',
+      icon: Globe,
+      description: 'Professional long-distance transport solutions with UK-wide coverage and no geographical limitations.',
       features: [
         'UK-wide coverage',
-        'Tracked deliveries',
-        'Scheduled transport',
-        'Secure handling',
-        'Insurance coverage',
-        'Real-time updates'
+        'Updates by phone only',
+        'Real-time customer updates',
+        'Full transit insurance',
+        'No geographical limitations',
+        'Secure handling'
       ],
       coverage: 'Nationwide UK coverage',
-      vehicles: '18ton truck, 44ton Arctic',
+      vehicles: '18ton lorries, 44ton Arctics',
       suitableFor: [
-        'Inter-city deliveries',
-        'Large construction projects',
+        'Construction materials',
         'Heavy machinery',
-        'Commercial relocations',
-        'Industrial equipment'
+        'Engineering loads',
+        'Commercial goods',
+        'Steel/Pallets'
       ]
     },
     {
       title: 'Specialized Loads',
       icon: Construction,
-      description: 'Expert handling of specialized and oversized load transport.',
+      description: 'Expert handling of all types of specialized loads including abnormal loads with no weight or size limitations.',
       features: [
-        'Oversized load permits',
-        'Route planning',
-        'Escort services',
-        'Custom solutions',
+        'Oversized loads requiring permits',
+        'Escort services if required',
+        'Specialized equipment available',
+        'No weight/size limitations',
         'Safety compliance',
-        'Insurance coverage'
+        'Full insurance coverage'
       ],
       coverage: 'UK-wide with route planning',
-      vehicles: '44ton Arctic with specialized equipment',
+      vehicles: '44ton Arctics with specialized restraint systems',
       suitableFor: [
-        'Construction machinery',
-        'Industrial equipment',
-        'Prefabricated structures',
-        'Agricultural machinery',
-        'Abnormal loads'
+        'Abnormal loads',
+        'Heavy machinery',
+        'Construction equipment',
+        'Engineering loads',
+        'Oversized cargo'
       ]
     }
   ];
@@ -236,8 +236,8 @@ export default function ServicesPage() {
               <Link href="/contact" className="btn-primary">
                 Get Free Quote
               </Link>
-              <Link href="tel:07967176567" className="btn-secondary">
-                Call: 07967 176567
+              <Link href="tel:01636402360" className="btn-secondary">
+                Call: 01636 402360
               </Link>
             </div>
           </div>

@@ -5,11 +5,11 @@ import StructuredData from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Contact Us - Get Your Transport Quote Today',
-  description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 07967 176567 or email lee@lwbarkertransport.com. Professional flatbed transport solutions across the UK.',
+  description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com. Professional flatbed transport solutions across the UK.',
   keywords: ['contact transport company', 'transport quote', 'transport inquiry', 'UK transport contact', 'flatbed transport quote', 'transport services contact', 'professional transport inquiry'],
   openGraph: {
     title: 'Contact Us - Get Your Transport Quote Today',
-    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 07967 176567 or email lee@lwbarkertransport.com.',
+    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com.',
     url: 'https://lwbarkertransport.com/contact',
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Us - Get Your Transport Quote Today',
-    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 07967 176567 or email lee@lwbarkertransport.com.',
+    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com.',
     images: ['/hero_bg5.jpg'],
   },
   alternates: {
@@ -45,7 +45,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-semibold text-brand-black mb-6">Get In Touch</h2>
               <p className="text-gray-600 mb-8">
-                Ready to discuss your transport needs? Contact us today for a free quote or to learn more about our services.
+                Ready to discuss your transport needs? Contact us today for a free quote or to learn more about our services. Our preferred method of contact is by phone at 01636 402360.
               </p>
               
               <div className="space-y-6">
@@ -57,8 +57,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-brand-black">Phone</h3>
-                    <p className="text-gray-600">07967 176567</p>
-                    <p className="text-sm text-gray-500">Available 24/7 for urgent transport needs</p>
+                    <p className="text-gray-600">01636 402360</p>
+                    <p className="text-sm text-gray-500">Our preferred contact method</p>
                   </div>
                 </div>
                 
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-brand-black">Location</h3>
-                    <p className="text-gray-600">NG24 1DW, United Kingdom</p>
+                    <p className="text-gray-600">United Kingdom</p>
                     <p className="text-sm text-gray-500">Serving the UK nationwide</p>
                   </div>
                 </div>
@@ -97,8 +97,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-brand-black">Operating Hours</h3>
-                    <p className="text-gray-600">24/7 Service Available</p>
-                    <p className="text-sm text-gray-500">Emergency transport services available</p>
+                    <p className="text-gray-600">Monday-Friday: 7:00 AM - 5:00 PM</p>
+                    <p className="text-gray-600">Saturday: 8:00 AM - 12:00 PM</p>
+                    <p className="text-sm text-gray-500">24/7 available for emergency transport via 07967 176567 (additional charges apply)</p>
                   </div>
                 </div>
               </div>

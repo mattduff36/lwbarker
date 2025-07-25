@@ -1,0 +1,16 @@
+# L.W. Barker Transport Fleet Information
+
+This file contains reference information about the L.W. Barker Transport fleet that may be needed for future reference.
+
+## Vehicle Counts (as of July 2025)
+
+- 3.5 Ton Vans: 2 (both flatbed and box configurations)
+- 7.5 Ton Trucks: 2 (flatbed)
+- 18 Ton Trucks: 1 (heavy-duty)
+- 44 Ton Arctic Vehicles: 7 (with specialized restraint systems)
+
+## Total Fleet Size
+- 12 vehicles in total
+- 11 professional drivers
+
+This information has been removed from the public-facing website as per client request but is maintained here for reference purposes.

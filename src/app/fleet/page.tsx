@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import { Truck, Car, Container, Anchor, Wrench, Shield, User } from 'lucide-react'
+import { Truck as LorryIcon, Box, Boxes, Container, Warehouse, Wrench, Shield, User } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-  description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5ton van to 44ton Arctic. Modern, well-maintained vehicles for local, long distance and specialized transport across the UK.',
-  keywords: ['transport fleet', 'flatbed vehicles', '3.5ton van', '7.5ton truck', '18ton truck', '44ton Arctic', 'professional vehicles', 'transport equipment', 'UK transport fleet'],
+  description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for local, long distance and specialized transport across the UK.',
+  keywords: ['transport fleet', 'flatbed vehicles', '3.5-ton vans', '7.5-ton lorry', '18-ton lorry', '44-ton articulated lorries', 'professional vehicles', 'transport equipment', 'UK transport fleet'],
   openGraph: {
     title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-    description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5ton van to 44ton Arctic. Modern, well-maintained vehicles for all transport needs.',
+    description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
     url: 'https://lwbarkertransport.com/fleet',
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-    description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5ton van to 44ton Arctic. Modern, well-maintained vehicles for all transport needs.',
+    description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
     images: ['/hero_bg3.jpg'],
   },
   alternates: {
@@ -35,98 +35,98 @@ export default function FleetPage() {
   const fleetVehicles = [
     {
       name: '3.5 Ton Van',
-      icon: Car,
-      capacity: 'Up to 3.5 tons',
-      dimensions: 'Length: 4.2m | Width: 2.1m | Height: 2.2m',
-      description: 'Perfect for smaller loads and urban deliveries. Ideal for local transport needs with excellent manoeuvrability.',
+      icon: Box,
+      capacity: 'Typical payload: 1.0 – 1.5 tonnes',
+      dimensions: 'Various dimensions',
+      description: 'We operate versatile 3.5 ton vans in both flatbed and box configurations for a wide range of applications.',
       features: [
-        'Urban friendly size',
-        'Excellent manoeuvrability',
+        'Both flatbed and box configurations',
+        'Excellent maneuverability',
         'Cost-effective for small loads',
         'Quick loading/unloading',
         'Fuel efficient',
         'Professional driver'
       ],
       applications: [
+        'Various applications',
         'Local deliveries',
         'Small machinery transport',
         'Construction supplies',
-        'Retail goods',
-        'Equipment hire delivery',
+        'Commercial goods',
         'Emergency transport'
       ],
-      coverage: 'Local and regional (up to 50 miles)',
+      coverage: 'Local and regional',
       availability: 'Available 24/7'
     },
     {
-      name: '7.5 Ton Truck',
-      icon: Truck,
-      capacity: 'Up to 7.5 tons',
-      dimensions: 'Length: 6.2m | Width: 2.4m | Height: 2.5m',
-      description: 'Mid-range capacity for medium-sized loads and regional transport. Perfect balance of capacity and flexibility.',
+      name: '7.5 Ton Lorry',
+      icon: Boxes,
+      capacity: 'Typical payload: 3.5 – 4.5 tonnes',
+      dimensions: 'Flatbed configuration',
+      description: 'Our flatbed 7.5 ton lorries provide reliable mid-range capacity for construction materials and commercial goods.',
       features: [
-        'Versatile payload capacity',
         'Flatbed design',
+        'Versatile payload capacity',
         'Regional coverage',
         'Reliable performance',
         'Professional drivers',
         'Secure load restraints'
       ],
       applications: [
-        'Regional deliveries',
-        'Medium machinery',
         'Construction materials',
         'Commercial goods',
-        'Agricultural supplies',
-        'Industrial equipment'
+        'Steel transport',
+        'Pallet delivery',
+        'Medium machinery',
+        'Regional deliveries'
       ],
-      coverage: 'Regional (up to 200 miles)',
+      coverage: 'Regional and nationwide',
       availability: 'Available 24/7'
     },
     {
-      name: '18 Ton Truck',
+      name: '18 Ton Lorry',
       icon: Container,
-      capacity: 'Up to 18 tons',
-      dimensions: 'Length: 8.5m | Width: 2.5m | Height: 3.0m',
-      description: 'Heavy-duty transport for larger loads and construction materials. Built for demanding applications.',
+      capacity: 'Typical payload: 10 – 11.5 tonnes',
+      dimensions: 'Heavy-duty flatbed',
+      description: 'Our 18 ton lorries provide heavy-duty transport for construction materials, heavy machinery, and engineering loads.',
       features: [
         'Heavy-duty construction',
         'Large flatbed area',
         'Powerful engine',
         'Advanced safety features',
         'Professional drivers',
-        'Crane compatibility'
+        'No crane compatibility'
       ],
       applications: [
         'Construction materials',
         'Heavy machinery',
-        'Industrial equipment',
+        'Engineering loads',
         'Steel structures',
-        'Precast concrete',
-        'Large plant hire'
+        'Palletized goods',
+        'Industrial equipment'
       ],
       coverage: 'UK-wide',
       availability: 'Available 24/7'
     },
     {
       name: '44 Ton Arctic',
-      icon: Anchor,
-      capacity: 'Up to 44 tons',
-      dimensions: 'Length: 13.6m | Width: 2.55m | Height: 3.2m',
-      description: 'Our flagship vehicle for maximum capacity and long-distance transport across the UK. Specialized for the heaviest loads.',
+      icon: Warehouse,
+      capacity: 'Typical payload: 28 – 30 tonnes',
+      dimensions: 'Maximum legal dimensions',
+      description: 'Our Arctic vehicles with specialized restraint systems can handle heavy loads across the UK.',
       features: [
-        'Maximum legal capacity',
+        'Specialized restraint systems',
         'Extended flatbed',
-        'Specialized restraints',
         'Long-distance capability',
         'Expert drivers',
-        'Full insurance coverage'
+        'Full insurance coverage',
+        'Maximum payload: 30 tonnes'
       ],
       applications: [
         'Heavy machinery transport',
         'Construction equipment',
-        'Industrial relocations',
-        'Oversized loads',
+        'Engineering loads',
+        'Steel/Pallets',
         'Long-haul transport',
         'Specialized cargo'
       ],
@@ -248,7 +248,7 @@ export default function FleetPage() {
               Fleet Capabilities & Standards
             </h2>
             <p className="text-brand-grey max-w-2xl mx-auto">
-              All our vehicles are maintained to the highest standards and operated by professional, experienced drivers.
+              Our fleet is maintained to the highest standards and operated by professional, experienced drivers covering hundreds of thousands of miles annually.
             </p>
           </div>
           
@@ -288,8 +288,8 @@ export default function FleetPage() {
             <Link href="/contact" className="btn-primary">
               Get Expert Advice
             </Link>
-            <Link href="tel:07967176567" className="btn-secondary">
-              Call: 07967 176567
+            <Link href="tel:01636402360" className="btn-secondary">
+              Call: 01636 402360
             </Link>
           </div>
         </div>

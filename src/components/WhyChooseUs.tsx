@@ -9,33 +9,33 @@ const WhyChooseUs: React.FC = () => {
   const values = [
     {
       icon: Shield,
-      title: 'Reliable & Safe',
-      description: 'Professional drivers with full insurance coverage and safety-first approach to all transport operations.'
+      title: 'Safety First',
+      description: 'Safety is one of our core values, with fully licensed drivers and comprehensive insurance coverage for all operations.'
     },
     {
       icon: Zap,
-      title: 'Fast & Efficient',
-      description: 'Quick response times and efficient routing to get your goods delivered on time, every time.'
+      title: 'Reliability & Punctuality',
+      description: 'We pride ourselves on being reliable and punctual - delivering your goods on time, every time.'
     },
     {
       icon: Briefcase,
       title: 'Professional Service',
-      description: 'Experienced team with industry expertise providing courteous and professional service throughout.'
+      description: 'With 21 years of experience, our team provides professional service with excellent communication throughout.'
     },
     {
       icon: Target,
-      title: 'Tailored Solutions',
-      description: 'Custom transport solutions designed to meet your specific needs and requirements.'
+      title: 'Flexibility',
+      description: 'We\'ll sort it. Nothing is ever a problem - our flexible approach ensures we meet your specific requirements.'
     },
     {
       icon: DollarSign,
       title: 'Competitive Rates',
-      description: 'Fair, transparent pricing with no hidden costs. Get the best value for your transport needs.'
+      description: 'Fair pricing based on load, distance, and location with discounts available for regular customers.'
     },
     {
       icon: Phone,
-      title: 'Easy Communication',
-      description: 'Direct contact with our team for quotes, updates, and support throughout the transport process.'
+      title: 'Excellent Communication',
+      description: 'We prioritize communication with our customers, providing real-time updates by phone throughout the transport process.'
     }
   ];
 
@@ -90,11 +90,11 @@ const WhyChooseUs: React.FC = () => {
               >
                 Get Free Quote
               </Link>
-              <Link 
-                href="tel:07967176567" 
+              <Link
+                href="tel:01636402360"
                 className="btn-secondary transform hover:scale-105 transition-all duration-300"
               >
-                Call Now: 07967 176567
+                Call Now: 01636 402360
               </Link>
             </div>
           </div>
@@ -104,13 +104,14 @@ const WhyChooseUs: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-lwb-orange-500 text-white p-6 rounded-lg hover:bg-lwb-orange-600 transition-all duration-300 transform hover:scale-105">
               <h4 className="text-xl font-semibold mb-2">Operating Hours</h4>
-              <p className="text-lwb-orange-100">Available 24/7 for emergency transport</p>
-              <p className="text-lwb-orange-100">Office: Monday - Friday, 8:00 AM - 6:00 PM</p>
+              <p className="text-lwb-orange-100">Office: Monday - Friday, 7:00 AM - 5:00 PM</p>
+              <p className="text-lwb-orange-100">Saturday: 8:00 AM - 12:00 PM</p>
+              <p className="text-lwb-orange-100 mt-2">Available 24/7 for emergency transport</p>
             </div>
             <div className="bg-lwb-black-900 text-white p-6 rounded-lg hover:bg-lwb-black-800 transition-all duration-300 transform hover:scale-105">
               <h4 className="text-xl font-semibold mb-2">Coverage Area</h4>
-              <p className="text-lwb-grey-300">UK-wide transport services</p>
-              <p className="text-lwb-grey-300">Based in NG24 1DW</p>
+              <p className="text-lwb-grey-300">Delivering Excellence across the UK</p>
+              <p className="text-lwb-grey-300 mt-2">Based in the East Midlands</p>
             </div>
           </div>
         </AnimatedSection>

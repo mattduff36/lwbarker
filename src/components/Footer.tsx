@@ -25,7 +25,10 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-lwb-grey-300 text-sm">
-              Complete flatbed transport solutions with vehicles from 3.5ton van to 44ton Arctic.
+              Family-run business since 2004 with 21 years of experience. Complete flatbed transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
+            </p>
+            <p className="text-lwb-grey-300 text-sm italic mt-1">
+              "We will NOT let you down."
             </p>
           </div>
 
@@ -35,37 +38,38 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
                 <div className="flex-shrink-0 w-5 h-5 bg-lwb-orange-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">📍</span>
-                </div>
-                <p className="text-lwb-grey-300">NG24 1DW</p>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="flex-shrink-0 w-5 h-5 bg-lwb-orange-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-xs">📞</span>
                 </div>
-                <a 
-                  href="tel:07967176567" 
+                <a
+                  href="tel:01636402360"
                   className="text-lwb-grey-300 hover:text-lwb-orange-400 transition-colors duration-200"
                 >
-                  07967 176567
+                  01636 402360
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="flex-shrink-0 w-5 h-5 bg-lwb-orange-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-xs">✉️</span>
                 </div>
-                <a 
-                  href="mailto:lee@lwbarkertransport.com" 
+                <a
+                  href="mailto:lee@lwbarkertransport.com"
                   className="text-lwb-grey-300 hover:text-lwb-orange-400 transition-colors duration-200"
                 >
                   lee@lwbarkertransport.com
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 mt-4">
                 <div className="flex-shrink-0 w-5 h-5 bg-lwb-orange-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">🌐</span>
+                  <span className="text-white text-xs">f</span>
                 </div>
-                <p className="text-lwb-grey-300">lwbarkertransport.com</p>
+                <a
+                  href="https://www.facebook.com/lwbarkeruk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lwb-grey-300 hover:text-lwb-orange-400 transition-colors duration-200"
+                >
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
@@ -92,45 +96,25 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Social Media & Services */}
+          {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Follow Us</h4>
-            <div className="space-y-2">
-              <a 
-                href="https://www.facebook.com/lwbarkeruk/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-lwb-grey-300 hover:text-lwb-orange-400 transition-colors duration-200"
-              >
-                <div className="flex-shrink-0 w-5 h-5 bg-lwb-orange-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">f</span>
-                </div>
-                <span>Facebook</span>
-              </a>
-            </div>
-            <div className="mt-6">
-              <h5 className="text-sm font-semibold text-white mb-2">Our Services</h5>
-              <ul className="text-sm text-lwb-grey-300 space-y-1">
-                <li>• Local Transport</li>
-                <li>• Long Distance</li>
-                <li>• Specialized Loads</li>
-                <li>• 3.5t - 44t Vehicles</li>
-              </ul>
-            </div>
+            <h4 className="text-lg font-semibold text-white">Our Services</h4>
+            <ul className="text-sm text-lwb-grey-300 space-y-1">
+              <li>• Local Transport (No restrictions)</li>
+              <li>• Long Distance (UK-wide)</li>
+              <li>• Specialized & Abnormal Loads</li>
+              <li>• Fleet of vehicles (3.5t - 44t)</li>
+              <li>• 24/7 Emergency Transport</li>
+            </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-lwb-grey-700">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-lwb-grey-400 text-sm">
-              © {new Date().getFullYear()} L.W. Barker Transport Services LTD. All rights reserved.
+          <div className="flex justify-center items-center">
+            <p className="text-lwb-grey-400 text-sm text-center">
+              Website developed by <a href="https://mpdee.co.uk" target="_blank" rel="noopener noreferrer" className="text-lwb-orange-400 hover:text-lwb-orange-300">mpdee.co.uk</a> © 2025. All rights reserved.
             </p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <button className="btn-primary text-sm">
-                Get a Quote
-              </button>
-            </div>
           </div>
         </div>
       </div>

@@ -127,29 +127,29 @@ const Hero: React.FC = () => {
               
               {/* Animated heading */}
               <h1 className={`text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                Complete <span className="text-lwb-orange-500 animate-pulse-soft">Flatbed Transport</span> Solutions
+                L.W. Barker <span className="text-lwb-orange-500 animate-pulse-soft">Transport Services</span> LTD
               </h1>
               
               {/* Animated subtitle */}
               <p className={`text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                Professional transport services from 3.5ton van to 44ton Arctic. 
-                Reliable, efficient, and tailored to your needs.
+                When you need something delivered, we're always on hand to say YES!
+                <span className="block mt-2 font-semibold">We will NOT let you down.</span>
               </p>
               
               {/* Animated buttons */}
               <div className={`flex flex-col sm:flex-row gap-3 md:gap-4 justify-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                <Link 
-                  href="/contact" 
-                  className="btn-primary group relative overflow-hidden"
+                <Link
+                  href="/contact"
+                  className="btn-primary group relative overflow-hidden flex items-center justify-center"
                 >
                   <span className="relative z-10">Get a Quote</span>
                   <div className="absolute inset-0 bg-lwb-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                 </Link>
-                <Link 
-                  href="/services" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-lwb-black-900 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                <Link
+                  href="/services"
+                  className="group relative overflow-hidden flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-lwb-black-900 px-6 md:px-8 py-3 md:py-4 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                 >
-                  View Services
+                  <span className="relative z-10">View Services</span>
                 </Link>
               </div>
             </div>
@@ -180,8 +180,8 @@ const Hero: React.FC = () => {
                 <span className="text-lwb-orange-500 icon-hover">
                   <Phone size={16} />
                 </span>
-                <a href="tel:07967176567" className="link-hover">
-                  07967 176567
+                <a href="tel:01636402360" className="link-hover">
+                  01636 402360
                 </a>
               </div>
               <div className="flex items-center space-x-2 transition-all duration-300 hover:scale-105">
@@ -196,7 +196,7 @@ const Hero: React.FC = () => {
                 <span className="text-lwb-orange-500 icon-hover">
                   <MapPin size={16} />
                 </span>
-                <span>NG24 1DW</span>
+                <span>Based in Newark NG24</span>
               </div>
             </div>
           </div>
