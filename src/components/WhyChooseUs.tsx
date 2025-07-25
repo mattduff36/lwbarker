@@ -47,7 +47,7 @@ const WhyChooseUs: React.FC = () => {
             Why Choose <span className="text-lwb-orange-500">L.W. Barker</span>?
           </h2>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-            We pride ourselves on delivering complete flatbed transport solutions with professionalism, 
+            We pride ourselves on delivering complete transport solutions with professionalism,
             reliability, and customer satisfaction at the heart of everything we do.
           </p>
         </AnimatedSection>

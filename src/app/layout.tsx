@@ -16,11 +16,11 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://lwbarkertransport.com'),
   title: {
-    default: 'L.W. Barker Transport Services LTD | Professional Flatbed Transport',
+    default: 'L.W. Barker Transport Services LTD | Professional Transport',
     template: '%s | L.W. Barker Transport Services LTD'
   },
-  description: "Family-run business since 2004 providing professional flatbed transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
-  keywords: ['flatbed transport', 'transport services', 'logistics', 'UK transport', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation', 'haulage services', 'delivery services', 'engineering transport', 'construction transport', 'manufacturing transport', 'abnormal loads', 'emergency transport', 'flexible transport solutions', '24/7 transport'],
+  description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
+  keywords: ['transport', 'transport services', 'logistics', 'UK transport', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation', 'haulage services', 'delivery services', 'engineering transport', 'construction transport', 'manufacturing transport', 'abnormal loads', 'emergency transport', 'flexible transport solutions', '24/7 transport'],
   authors: [{ name: 'L.W. Barker Transport Services LTD' }],
   creator: 'L.W. Barker Transport Services LTD',
   publisher: 'L.W. Barker Transport Services LTD',
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: 'https://lwbarkertransport.com',
     siteName: 'L.W. Barker Transport Services LTD',
-    title: 'L.W. Barker Transport Services LTD | Professional Flatbed Transport',
-    description: "Family-run business since 2004 providing professional flatbed transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
+    title: 'L.W. Barker Transport Services LTD | Professional Transport',
+    description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'L.W. Barker Transport Services LTD - Professional Flatbed Transport',
+        alt: 'L.W. Barker Transport Services LTD - Professional Transport',
         type: 'image/jpeg',
       },
       {
@@ -68,14 +68,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'L.W. Barker Transport Services LTD | Professional Flatbed Transport',
-    description: "Family-run business since 2004 providing professional flatbed transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
+    title: 'L.W. Barker Transport Services LTD | Professional Transport',
+    description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'L.W. Barker Transport Services LTD - Professional Flatbed Transport'
+        alt: 'L.W. Barker Transport Services LTD - Professional Transport'
       },
       {
         url: '/LOGO.png',

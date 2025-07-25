@@ -35,7 +35,7 @@ const ServicesOverview: React.FC = () => {
             Our <span className="text-lwb-orange-500">Transport Services</span>
           </h2>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-            Complete flatbed transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
+            Complete transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
             Whatever your transport needs, we have the right solution for you.
           </p>
         </AnimatedSection>

@@ -5,11 +5,11 @@ import { Truck as LorryIcon, Box, Boxes, Container, Warehouse, Wrench, Shield, U
 
 export const metadata: Metadata = {
   title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-  description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for local, long distance and specialized transport across the UK.',
-  keywords: ['transport fleet', 'flatbed vehicles', '3.5-ton vans', '7.5-ton lorry', '18-ton lorry', '44-ton articulated lorries', 'professional vehicles', 'transport equipment', 'UK transport fleet'],
+  description: 'Comprehensive fleet of professional transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for local, long distance and specialized transport across the UK.',
+  keywords: ['transport fleet', 'vehicles', '3.5-ton vans', '7.5-ton lorry', '18-ton lorry', '44-ton articulated lorries', 'professional vehicles', 'transport equipment', 'UK transport fleet'],
   openGraph: {
     title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-    description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
+    description: 'Comprehensive fleet of professional transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
     url: 'https://lwbarkertransport.com/fleet',
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-    description: 'Comprehensive fleet of professional flatbed transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
+    description: 'Comprehensive fleet of professional transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
     images: ['/hero_bg3.jpg'],
   },
   alternates: {
@@ -38,9 +38,9 @@ export default function FleetPage() {
       icon: Box,
       capacity: 'Typical payload: 1.0 – 1.5 tonnes',
       dimensions: 'Various dimensions',
-      description: 'We operate versatile 3.5 ton vans in both flatbed and box configurations for a wide range of applications.',
+      description: 'We operate versatile 3.5 ton vans in various configurations for a wide range of applications.',
       features: [
-        'Both flatbed and box configurations',
+        'Various configurations',
         'Excellent maneuverability',
         'Cost-effective for small loads',
         'Quick loading/unloading',
@@ -62,10 +62,10 @@ export default function FleetPage() {
       name: '7.5 Ton Lorry',
       icon: Boxes,
       capacity: 'Typical payload: 3.5 – 4.5 tonnes',
-      dimensions: 'Flatbed configuration',
-      description: 'Our flatbed 7.5 ton lorries provide reliable mid-range capacity for construction materials and commercial goods.',
+      dimensions: 'Versatile configuration',
+      description: 'Our 7.5 ton lorries provide reliable mid-range capacity for construction materials and commercial goods.',
       features: [
-        'Flatbed design',
+        'Versatile design',
         'Versatile payload capacity',
         'Regional coverage',
         'Reliable performance',
@@ -87,11 +87,11 @@ export default function FleetPage() {
       name: '18 Ton Lorry',
       icon: Container,
       capacity: 'Typical payload: 10 – 11.5 tonnes',
-      dimensions: 'Heavy-duty flatbed',
+      dimensions: 'Heavy-duty design',
       description: 'Our 18 ton lorries provide heavy-duty transport for construction materials, heavy machinery, and engineering loads.',
       features: [
         'Heavy-duty construction',
-        'Large flatbed area',
+        'Large cargo area',
         'Powerful engine',
         'Advanced safety features',
         'Professional drivers',
@@ -116,7 +116,7 @@ export default function FleetPage() {
       description: 'Our Arctic vehicles with specialized restraint systems can handle heavy loads across the UK.',
       features: [
         'Specialized restraint systems',
-        'Extended flatbed',
+        'Extended cargo area',
         'Long-distance capability',
         'Expert drivers',
         'Full insurance coverage',
@@ -144,7 +144,7 @@ export default function FleetPage() {
           </h1>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
             From compact vans to heavy-duty Arctics, our diverse fleet ensures we can handle any transport 
-            requirement with professional flatbed solutions and experienced drivers.
+            requirement with professional transport solutions and experienced drivers.
           </p>
         </div>
         

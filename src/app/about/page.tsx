@@ -5,11 +5,11 @@ import { Shield, Target, Zap, Briefcase, MapPin, Globe, Construction, Phone, Mai
 
 export const metadata: Metadata = {
   title: 'About Us - Professional Transport Company Since 2004',
-  description: 'Learn about L.W. Barker Transport Services LTD - a family-run flatbed transport company with 21 years of experience providing reliable, safe, and efficient transport solutions across the UK with 24/7 service availability.',
-  keywords: ['about transport company', 'professional transport', 'reliable transport', 'UK transport company', 'flatbed transport company', 'transport services history', 'professional logistics'],
+  description: 'Learn about L.W. Barker Transport Services LTD - a family-run transport company with 21 years of experience providing reliable, safe, and efficient transport solutions across the UK with 24/7 service availability.',
+  keywords: ['about transport company', 'professional transport', 'reliable transport', 'UK transport company', 'transport company', 'transport services history', 'professional logistics'],
   openGraph: {
     title: 'About Us - Professional Transport Company Since Establishment',
-    description: 'Learn about L.W. Barker Transport Services LTD - a professional flatbed transport company providing reliable, safe, and efficient transport solutions across the UK.',
+    description: 'Learn about L.W. Barker Transport Services LTD - a professional transport company providing reliable, safe, and efficient transport solutions across the UK.',
     url: 'https://lwbarkertransport.com/about',
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Us - Professional Transport Company Since Establishment',
-    description: 'Learn about L.W. Barker Transport Services LTD - a professional flatbed transport company providing reliable, safe, and efficient transport solutions across the UK.',
+    description: 'Learn about L.W. Barker Transport Services LTD - a professional transport company providing reliable, safe, and efficient transport solutions across the UK.',
     images: ['/hero_bg4.jpg'],
   },
   alternates: {
@@ -70,7 +70,7 @@ export default function AboutPage() {
             About <span className="text-lwb-orange-500">L.W. Barker</span>
           </h1>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-            Your trusted partner for complete flatbed transport solutions across the UK
+            Your trusted partner for complete transport solutions across the UK
           </p>
         </div>
         
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 </p>
                 <p className="text-brand-grey leading-relaxed">
                   Today, with 21 years of experience, we've grown to operate a diverse fleet of vehicles and employ skilled drivers, covering hundreds of thousands of
-                  miles annually. We pride ourselves in offering complete flatbed transport solutions, from 3.5-ton vans to 44-ton articulated lorries.
+                  miles annually. We pride ourselves in offering complete transport solutions, from 3.5-ton vans to 44-ton articulated lorries.
                 </p>
               </div>
               <div className="text-center">

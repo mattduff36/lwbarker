@@ -7,26 +7,26 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Professional Flatbed Transport Services | UK-Wide Coverage',
-  description: 'L.W. Barker Transport Services LTD offers professional flatbed transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services.',
-  keywords: ['flatbed transport UK', 'professional transport services', 'UK transport company', 'logistics services', 'haulage services', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation'],
-  openGraph: {
-    title: 'Professional Flatbed Transport Services | UK-Wide Coverage',
-    description: 'L.W. Barker Transport Services LTD offers professional flatbed transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries.',
+  title: 'Professional Transport Services | UK-Wide Coverage',
+  description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services.',
+  keywords: ['transport UK', 'professional transport services', 'UK transport company', 'logistics services', 'haulage services', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation'],
+      openGraph: {
+      title: 'Professional Transport Services | UK-Wide Coverage',
+      description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries.',
     url: 'https://lwbarkertransport.com',
     images: [
       {
         url: '/hero_bg1.jpg',
         width: 1200,
         height: 630,
-        alt: 'L.W. Barker Transport Services - Professional Flatbed Transport',
+        alt: 'L.W. Barker Transport Services - Professional Transport',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Professional Flatbed Transport Services | UK-Wide Coverage',
-    description: 'L.W. Barker Transport Services LTD offers professional flatbed transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries.',
+    title: 'Professional Transport Services | UK-Wide Coverage',
+    description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries.',
     images: ['/hero_bg1.jpg'],
   },
   alternates: {

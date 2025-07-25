@@ -6,11 +6,11 @@ import { MapPin, Globe, Construction, Shield, Zap, Briefcase } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: 'Transport Services - Local, Long Distance & Specialized',
-  description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional flatbed solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries across the UK.',
-  keywords: ['transport services', 'local transport', 'long distance transport', 'specialized transport', 'flatbed delivery', 'UK haulage', 'logistics services', 'transport solutions', 'vehicle transportation'],
+  description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries across the UK.',
+  keywords: ['transport services', 'local transport', 'long distance transport', 'specialized transport', 'delivery', 'UK haulage', 'logistics services', 'transport solutions', 'vehicle transportation'],
   openGraph: {
     title: 'Transport Services - Local, Long Distance & Specialized',
-    description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional flatbed solutions across the UK.',
+    description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional transport solutions across the UK.',
     url: 'https://lwbarkertransport.com/services',
     images: [
       {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Transport Services - Local, Long Distance & Specialized',
-    description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional flatbed solutions across the UK.',
+    description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional transport solutions across the UK.',
     images: ['/hero_bg2.jpg'],
   },
   alternates: {
@@ -112,7 +112,7 @@ export default function ServicesPage() {
               Our <span className="text-lwb-orange-500">Transport Services</span>
             </h1>
             <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-              Complete flatbed transport solutions with professional service and reliable delivery.
+              Complete transport solutions with professional service and reliable delivery.
               From local deliveries to specialized loads, we have the expertise and equipment to meet your needs.
             </p>
             <div className="inline-block bg-lwb-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full mt-4 animate-pulse-soft">

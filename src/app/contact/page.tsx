@@ -5,8 +5,8 @@ import StructuredData from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Contact Us - Get Your Transport Quote Today',
-  description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com. Professional flatbed transport solutions across the UK.',
-  keywords: ['contact transport company', 'transport quote', 'transport inquiry', 'UK transport contact', 'flatbed transport quote', 'transport services contact', 'professional transport inquiry'],
+  description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com. Professional transport solutions across the UK.',
+  keywords: ['contact transport company', 'transport quote', 'transport inquiry', 'UK transport contact', 'transport quote', 'transport services contact', 'professional transport inquiry'],
   openGraph: {
     title: 'Contact Us - Get Your Transport Quote Today',
     description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com.',

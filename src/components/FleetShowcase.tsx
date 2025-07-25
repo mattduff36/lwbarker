@@ -11,7 +11,7 @@ const FleetShowcase: React.FC = () => {
       name: '3.5 Ton Van',
       icon: Box,
       capacity: 'Typical payload: 1.0 – 1.5 tonnes',
-      description: 'Versatile vans in both flatbed and box configurations',
+      description: 'Versatile vans in various configurations',
       features: ['Urban friendly', 'Versatile', 'Cost-effective'],
       suitable: 'Various applications for local and regional transport'
     },
@@ -19,8 +19,8 @@ const FleetShowcase: React.FC = () => {
       name: '7.5 Ton Lorry',
       icon: Boxes,
       capacity: 'Typical payload: 3.5 – 4.5 tonnes',
-      description: 'Our flatbed lorries provide reliable mid-range capacity',
-      features: ['Flatbed design', 'Reliable', 'Efficient'],
+      description: 'Our lorries provide reliable mid-range capacity',
+      features: ['Versatile design', 'Reliable', 'Efficient'],
       suitable: 'Construction materials, commercial goods, steel, pallets'
     },
     {
@@ -50,7 +50,7 @@ const FleetShowcase: React.FC = () => {
           </h2>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
             From compact vans to heavy-duty Arctics, our diverse fleet ensures we can handle any transport requirement 
-            with professional flatbed solutions.
+            with professional transport solutions.
           </p>
         </AnimatedSection>
 
