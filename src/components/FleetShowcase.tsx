@@ -108,9 +108,6 @@ const FleetShowcase: React.FC = () => {
             <div className="text-center group relative">
               <div className="text-3xl font-bold text-lwb-orange-500 mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
               <div className="text-brand-grey">Available Service</div>
-              <div className="absolute -top-3 -right-3 bg-lwb-orange-500 text-white text-xs px-2 py-1 rounded-full animate-pulse-soft">
-                Emergency Transport
-              </div>
             </div>
             <div className="text-center group">
               <div className="text-3xl font-bold text-lwb-orange-500 mb-2 group-hover:scale-110 transition-transform duration-300">UK-Wide</div>
