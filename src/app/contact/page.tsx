@@ -57,8 +57,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-brand-black">Phone</h3>
-                    <p className="text-gray-600">01636 402360</p>
-                    <p className="text-sm text-gray-500">Our preferred contact method</p>
+                    <p className="text-gray-600">01636 402360 <span className="text-sm text-gray-500">(Office)</span></p>
+                    <p className="text-gray-600">07967 176567 <span className="text-sm text-gray-500">(24/7 Emergency)</span></p>
+                    <p className="text-sm text-gray-500">Office calls preferred during business hours</p>
                   </div>
                 </div>
                 

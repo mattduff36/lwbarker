@@ -1,0 +1,11 @@
+This is a placeholder for the apple-touch-icon.png file.
+
+Please create a 180x180 pixel PNG image with the L.W. Barker Transport logo and save it as "apple-touch-icon.png" in this directory.
+
+The image should have:
+- Dimensions: 180x180 pixels
+- Format: PNG (no transparency needed)
+- Content: L.W. Barker Transport logo on a solid background
+- Colors: Use the brand colors (#1a56db blue and/or orange accent)
+
+This icon will be used when iOS users add the website to their home screen. Apple devices require this specific icon size and format for optimal display.

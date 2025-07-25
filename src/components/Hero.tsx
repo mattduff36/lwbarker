@@ -70,9 +70,9 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      {/* Preload critical images */}
-      <link rel="preload" as="image" href={heroImages[0]} />
-      <link rel="preload" as="image" href={heroImages[1]} />
+      {/* Preload critical images with responsive sizes */}
+      <link rel="preload" as="image" href={heroImages[0]} imageSrcSet="/hero_bg1.jpg?w=640 640w, /hero_bg1.jpg?w=750 750w, /hero_bg1.jpg?w=828 828w, /hero_bg1.jpg?w=1080 1080w, /hero_bg1.jpg?w=1200 1200w, /hero_bg1.jpg?w=1920 1920w, /hero_bg1.jpg?w=2048 2048w" imageSizes="100vw" />
+      <link rel="preload" as="image" href="/LOGO-TransBG.png" />
       
       <section className="relative h-[85vh] md:h-[90vh] lg:h-screen w-full overflow-hidden">
         {/* Background Image Carousel */}
@@ -90,12 +90,13 @@ const Hero: React.FC = () => {
                 fill
                 className="object-cover transition-transform duration-1000 ease-in-out"
                 priority={index === 0}
-                quality={index === 0 ? 90 : 85}
+                quality={index === 0 ? 90 : 80}
                 loading={index === 0 ? 'eager' : 'lazy'}
-                sizes="100vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
                 onLoad={() => handleImageLoad(index)}
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                fetchPriority={index === 0 ? "high" : "auto"}
               />
               {/* Loading placeholder for non-priority images */}
               {!imagesLoaded[index] && index !== 0 && (
@@ -121,6 +122,9 @@ const Hero: React.FC = () => {
                     fill
                     className="object-contain transition-transform duration-300 hover:scale-110"
                     priority
+                    sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                    quality={95}
+                    fetchPriority="high"
                   />
                 </div>
               </div>
@@ -129,11 +133,17 @@ const Hero: React.FC = () => {
               <h1 className={`text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 L.W. Barker <span className="text-lwb-orange-500 animate-pulse-soft">Transport Services</span> LTD
               </h1>
+              <div
+                className={`inline-block bg-lwb-orange-500 text-white text-sm md:text-base font-bold px-3 py-1 rounded-full mb-4 transition-all duration-1000 delay-1000 ${
+                  isVisible ? 'opacity-100 scale-100 animate-bounce-entrance' : 'opacity-0 scale-50'
+                }`}
+              >
+                24/7 Emergency Transport Available
+              </div>
               
               {/* Animated subtitle */}
               <p className={`text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                When you need something delivered, we're always on hand to say YES!
-                <span className="block mt-2 font-semibold">We will NOT let you down.</span>
+                <span className="font-semibold">Delivering Excellence</span>
               </p>
               
               {/* Animated buttons */}
@@ -183,6 +193,7 @@ const Hero: React.FC = () => {
                 <a href="tel:01636402360" className="link-hover">
                   01636 402360
                 </a>
+                <span className="text-xs text-lwb-grey-300">(Office)</span>
               </div>
               <div className="flex items-center space-x-2 transition-all duration-300 hover:scale-105">
                 <span className="text-lwb-orange-500 icon-hover">

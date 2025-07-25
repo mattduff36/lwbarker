@@ -1,0 +1,11 @@
+This is a placeholder for the icon-192x192.png file.
+
+Please create a 192x192 pixel PNG image with the L.W. Barker Transport logo and save it as "icon-192x192.png" in this directory.
+
+The image should have:
+- Dimensions: 192x192 pixels
+- Format: PNG with transparency
+- Content: L.W. Barker Transport logo on a transparent or solid background
+- Colors: Use the brand colors (#1a56db blue and/or orange accent)
+
+This icon will be used for PWA (Progressive Web App) functionality and as an app icon when users add the website to their home screen on mobile devices.

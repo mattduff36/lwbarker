@@ -206,6 +206,7 @@ export default function AboutPage() {
                 <a href="tel:01636402360" className="text-brand-orange hover:text-lwb-orange-600">
                   01636 402360
                 </a>
+                <p className="text-xs text-brand-grey">(Office)</p>
               </div>
               <div className="text-center">
                 <div className="text-lwb-orange-500 mb-2 flex justify-center">

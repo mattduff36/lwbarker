@@ -112,9 +112,12 @@ export default function ServicesPage() {
               Our <span className="text-lwb-orange-500">Transport Services</span>
             </h1>
             <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-              Complete flatbed transport solutions with professional service and reliable delivery. 
+              Complete flatbed transport solutions with professional service and reliable delivery.
               From local deliveries to specialized loads, we have the expertise and equipment to meet your needs.
             </p>
+            <div className="inline-block bg-lwb-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full mt-4 animate-pulse-soft">
+              24/7 Emergency Transport Available
+            </div>
           </div>
 
           <div className="space-y-12">
@@ -237,7 +240,7 @@ export default function ServicesPage() {
                 Get Free Quote
               </Link>
               <Link href="tel:01636402360" className="btn-secondary">
-                Call: 01636 402360
+                Call Office: 01636 402360
               </Link>
             </div>
           </div>

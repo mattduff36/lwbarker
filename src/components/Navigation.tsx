@@ -92,6 +92,19 @@ const Navigation: React.FC = () => {
             </div>
           </Link>
 
+          {/* Mobile Phone Button */}
+          <a
+            href="tel:01636402360"
+            className="md:hidden flex items-center justify-center h-12 px-3 rounded-lg bg-lwb-grey-100 hover:bg-lwb-grey-200 text-lwb-black-900 transition-all duration-300 mr-2 focus:outline-none focus:ring-2 focus:ring-lwb-orange-500"
+            aria-label="Call office: 01636 402360"
+            title="Call office: 01636 402360"
+          >
+            <span className="sr-only">Call office: 01636 402360</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" role="img">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </a>
+
           {/* Desktop Navigation with enhanced animations */}
           <div className="hidden md:flex items-center space-x-8" role="menubar">
             {navigationItems.map((item, index) => (
@@ -121,11 +134,12 @@ const Navigation: React.FC = () => {
           {/* Mobile Menu Button with enhanced animation */}
           <button
             ref={menuButtonRef}
-            className="md:hidden flex items-center justify-center w-12 h-12 rounded-lg bg-lwb-orange-500 hover:bg-lwb-orange-600 focus:outline-none focus:ring-2 focus:ring-lwb-orange-300 transition-all duration-300 shadow-md flex-shrink-0 hover:scale-110 hover:shadow-lg"
+            className="md:hidden flex items-center justify-center w-12 h-12 rounded-lg bg-lwb-orange-500 hover:bg-lwb-orange-600 focus:outline-none focus:ring-2 focus:ring-lwb-orange-300 focus:ring-offset-2 transition-all duration-300 shadow-md flex-shrink-0 hover:scale-110 hover:shadow-lg"
             onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
+            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
+            aria-haspopup="menu"
           >
             <div className="relative w-6 h-6">
               <span
@@ -158,12 +172,12 @@ const Navigation: React.FC = () => {
           aria-orientation="vertical"
           aria-labelledby="mobile-menu-button"
         >
-          <div className="py-4 space-y-2">
+          <div className="py-6 space-y-3">
             {navigationItems.map((item, index) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`block px-4 py-3 text-base font-medium transition-all duration-300 hover:bg-lwb-grey-50 hover:text-lwb-orange-500 focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:ring-inset rounded-md transform hover:translate-x-2 hover:scale-105 ${
+                className={`flex items-center px-6 py-4 text-lg font-medium transition-all duration-300 hover:bg-lwb-grey-50 hover:text-lwb-orange-500 focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:ring-inset rounded-lg transform hover:translate-x-2 hover:scale-105 ${
                   isActiveLink(item.href)
                     ? 'text-lwb-orange-500 bg-lwb-orange-50 border-l-4 border-lwb-orange-500 scale-105'
                     : 'text-lwb-black-900'
@@ -172,7 +186,7 @@ const Navigation: React.FC = () => {
                 role="menuitem"
                 aria-current={isActiveLink(item.href) ? 'page' : undefined}
                 tabIndex={isMenuOpen ? 0 : -1}
-                style={{ 
+                style={{
                   animationDelay: `${index * 100}ms`,
                   transform: isMenuOpen ? 'translateX(0)' : 'translateX(-20px)',
                   opacity: isMenuOpen ? 1 : 0,
@@ -182,6 +196,22 @@ const Navigation: React.FC = () => {
                 {item.label}
               </Link>
             ))}
+            
+            {/* Emergency Contact in Mobile Menu */}
+            <div className="mt-6 px-6 py-4 bg-lwb-orange-50 rounded-lg" aria-labelledby="emergency-contact-heading">
+              <p id="emergency-contact-heading" className="text-sm font-medium text-lwb-black-900 mb-2">24/7 Emergency Transport</p>
+              <a
+                href="tel:07967176567"
+                className="flex items-center text-lwb-orange-500 font-bold text-lg focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 rounded-md px-2 py-1"
+                aria-label="Call emergency number: 07967 176567"
+                title="Call emergency number: 07967 176567"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2" aria-hidden="true" role="img">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                07967 176567
+              </a>
+            </div>
           </div>
         </div>
       </div>

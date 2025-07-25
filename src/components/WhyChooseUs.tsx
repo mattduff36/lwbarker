@@ -94,7 +94,9 @@ const WhyChooseUs: React.FC = () => {
                 href="tel:01636402360"
                 className="btn-secondary transform hover:scale-105 transition-all duration-300"
               >
-                Call Now: 01636 402360
+                <span className="flex items-center justify-center">
+                  <span>Call Office: 01636 402360</span>
+                </span>
               </Link>
             </div>
           </div>
