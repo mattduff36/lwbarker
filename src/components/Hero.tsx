@@ -133,13 +133,6 @@ const Hero: React.FC = () => {
               <h1 className={`text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 L.W. Barker <span className="text-lwb-orange-500 animate-pulse-soft">Transport Services</span> LTD
               </h1>
-              <div
-                className={`inline-block bg-lwb-orange-500 text-white text-sm md:text-base font-bold px-3 py-1 rounded-full mb-4 transition-all duration-1000 delay-1000 ${
-                  isVisible ? 'opacity-100 scale-100 animate-bounce-entrance' : 'opacity-0 scale-50'
-                }`}
-              >
-                24/7 Emergency Transport Available
-              </div>
               
               {/* Animated subtitle */}
               <p className={`text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
