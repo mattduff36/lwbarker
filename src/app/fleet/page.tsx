@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import { Truck as LorryIcon, Box, Boxes, Container, Warehouse, Wrench, Shield, User } from 'lucide-react'
+import { Box, Boxes, Container, Warehouse, Wrench, Shield, User } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Fleet - Professional Transport Vehicles for Every Need',

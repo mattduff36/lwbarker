@@ -58,7 +58,7 @@ export default function AboutPage() {
     {
       icon: Briefcase,
       title: 'Flexibility',
-      description: 'We\'ll sort it. Nothing is ever a problem - our flexible approach ensures we meet your specific requirements.'
+      description: 'We&apos;ll sort it. Nothing is ever a problem - our flexible approach ensures we meet your specific requirements.'
     }
   ];
 
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   Our mission was simple: to provide reliable transport for the local and surrounding areas.
                 </p>
                 <p className="text-brand-grey leading-relaxed">
-                  Today, with 21 years of experience, we've grown to operate a diverse fleet of vehicles and employ skilled drivers, covering hundreds of thousands of
+                  Today, with 21 years of experience, we&apos;ve grown to operate a diverse fleet of vehicles and employ skilled drivers, covering hundreds of thousands of
                   miles annually. We pride ourselves in offering complete transport solutions, from 3.5-ton vans to 44-ton articulated lorries.
                 </p>
               </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
             <div className="bg-white p-8 rounded-lg border border-lwb-grey-200 shadow-lg">
               <h3 className="text-2xl font-bold text-brand-black mb-4">Our Mission</h3>
               <p className="text-brand-grey leading-relaxed">
-                "When you need something delivered, we're always on hand to say YES! We will NOT let you down."
+                &quot;When you need something delivered, we&apos;re always on hand to say YES! We will NOT let you down.&quot;
                 We strive to be the go-to choice for businesses requiring efficient, safe, and reliable transport solutions.
               </p>
             </div>

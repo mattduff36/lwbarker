@@ -5,7 +5,7 @@ interface StructuredDataProps {
   page?: string;
 }
 
-const StructuredData: React.FC<StructuredDataProps> = ({ type = 'organization', page = 'home' }) => {
+const StructuredData: React.FC<StructuredDataProps> = ({ page = 'home' }) => {
   const getStructuredData = () => {
     const baseOrganization = {
       "@context": "https://schema.org",

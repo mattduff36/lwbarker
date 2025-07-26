@@ -145,7 +145,7 @@ const ContactForm: React.FC = () => {
           tabIndex={-1}
         >
           <p className="text-green-800">
-            Thank you for your message! We'll get back to you as soon as possible.
+            Thank you for your message! We&apos;ll get back to you as soon as possible.
           </p>
         </div>
       )}
@@ -266,7 +266,7 @@ const ContactForm: React.FC = () => {
           )}
           {!errors.message && (
             <p id="message-help" className="mt-1 text-sm text-gray-600">
-              Please provide details about your request and when you'd prefer to be contacted
+              Please provide details about your request and when you&apos;d prefer to be contacted
             </p>
           )}
         </div>
@@ -292,7 +292,7 @@ const ContactForm: React.FC = () => {
           )}
         </button>
         <p id="submit-help" className="text-sm text-gray-600 text-center">
-          We'll call you back as soon as possible
+          We&apos;ll call you back as soon as possible
         </p>
       </form>
     </div>

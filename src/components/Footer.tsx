@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               Family-run business since 2004 with 21 years of experience. Complete transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
             </p>
             <p className="text-lwb-grey-300 text-sm italic mt-1">
-              "We will NOT let you down."
+              &quot;We will NOT let you down.&quot;
             </p>
           </div>
 

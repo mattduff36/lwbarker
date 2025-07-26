@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: 'L.W. Barker Transport Services LTD | Professional Transport',
     template: '%s | L.W. Barker Transport Services LTD'
   },
-  description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
+  description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we&apos;re always on hand to say YES! We will NOT let you down.",
   keywords: ['transport', 'transport services', 'logistics', 'UK transport', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation', 'haulage services', 'delivery services', 'engineering transport', 'construction transport', 'manufacturing transport', 'abnormal loads', 'emergency transport', 'flexible transport solutions', '24/7 transport'],
   authors: [{ name: 'L.W. Barker Transport Services LTD' }],
   creator: 'L.W. Barker Transport Services LTD',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     url: 'https://lwbarkertransport.com',
     siteName: 'L.W. Barker Transport Services LTD',
     title: 'L.W. Barker Transport Services LTD | Professional Transport',
-    description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
+    description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we&apos;re always on hand to say YES! We will NOT let you down.",
     images: [
       {
         url: '/og-image.jpg',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'L.W. Barker Transport Services LTD | Professional Transport',
-    description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we're always on hand to say YES! We will NOT let you down.",
+    description: "Family-run business since 2004 providing professional transport solutions with 24/7 availability. When you need something delivered, we&apos;re always on hand to say YES! We will NOT let you down.",
     images: [
       {
         url: '/og-image.jpg',

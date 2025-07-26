@@ -49,20 +49,6 @@ const Hero: React.FC = () => {
     });
   };
 
-  const handlePrevious = () => {
-    setIsAutoPlaying(false);
-    setCurrentImageIndex((prevIndex) => 
-      prevIndex === 0 ? heroImages.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setIsAutoPlaying(false);
-    setCurrentImageIndex((prevIndex) => 
-      prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   const handleDotClick = (index: number) => {
     setIsAutoPlaying(false);
     setCurrentImageIndex(index);
