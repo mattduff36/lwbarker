@@ -86,8 +86,19 @@ const ContactForm: React.FC = () => {
     setSubmitStatus('submitting');
     
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
       
       // Reset form on success
       setFormData({
@@ -107,6 +118,7 @@ const ContactForm: React.FC = () => {
       }, 100);
       
     } catch (error) {
+      console.error('Contact form error:', error);
       setSubmitStatus('error');
       
       // Focus on error message
