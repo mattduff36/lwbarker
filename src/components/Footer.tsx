@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-lwb-grey-300 text-sm">
-              Family-run business since 2004 with 21 years of experience. Complete transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
+              Family-run business since 2004 with 21 years of experience. Complete transport solutions with vehicles from 3.5 tonne vans to 44 tonne articulated lorries.
             </p>
             <p className="text-lwb-grey-300 text-sm italic mt-1">
               &quot;We will NOT let you down.&quot;
@@ -57,11 +57,11 @@ const Footer: React.FC = () => {
                   <span className="text-white text-xs">✉️</span>
                 </div>
                 <a
-                  href="mailto:lee@lwbarkertransport.com"
+                  href="mailto:traffic@lwbarkertransport.com"
                   className="text-lwb-grey-300 hover:text-lwb-orange-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lwb-orange-500 focus:ring-offset-2 focus:ring-offset-lwb-black-900 rounded-md px-1"
-                  aria-label="Email: lee@lwbarkertransport.com"
+                  aria-label="Email: traffic@lwbarkertransport.com"
                 >
-                  lee@lwbarkertransport.com
+                  traffic@lwbarkertransport.com
                 </a>
               </div>
               <div className="flex items-center space-x-3 mt-4">

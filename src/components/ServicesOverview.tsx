@@ -17,13 +17,13 @@ const ServicesOverview: React.FC = () => {
       title: 'Long Distance',
       description: 'Professional long-distance transport solutions with UK-wide coverage and real-time updates by phone.',
       icon: Globe,
-      features: ['UK-wide coverage', 'Updates by phone', 'Full transit insurance', 'No geographical limitations']
+      features: ['UK-wide coverage', 'Updates by phone', 'Full Goods in Transit Insurance', 'No geographical limitations']
     },
     {
       title: 'Specialized Loads',
-      description: 'Expert handling of all types of specialized loads including abnormal loads with no weight or size limitations.',
+      description: 'Expert handling of all types of specialized loads with professional equipment and experienced drivers.',
       icon: Construction,
-      features: ['Abnormal loads', 'No size/weight limits', 'Specialized equipment', 'Escort services if required']
+      features: ['Specialized equipment', 'Professional handling', 'Expert drivers', 'Secure transport']
     }
   ];
 
@@ -35,7 +35,7 @@ const ServicesOverview: React.FC = () => {
             Our <span className="text-lwb-orange-500">Transport Services</span>
           </h2>
           <p className="text-lg text-brand-grey max-w-2xl mx-auto">
-            Complete transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries.
+            Complete transport solutions with vehicles from 3.5 tonne vans to 44 tonne articulated lorries.
             Whatever your transport needs, we have the right solution for you.
           </p>
         </AnimatedSection>

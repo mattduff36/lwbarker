@@ -6,7 +6,7 @@ import { MapPin, Globe, Construction, Shield, Zap, Briefcase } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: 'Transport Services - Local, Long Distance & Specialized',
-  description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries across the UK.',
+  description: 'Comprehensive transport services including local delivery, long distance haulage, and specialized transport. Professional transport solutions with vehicles from 3.5 tonne vans to 44 tonne articulated lorries across the UK.',
   keywords: ['transport services', 'local transport', 'long distance transport', 'specialized transport', 'delivery', 'UK haulage', 'logistics services', 'transport solutions', 'vehicle transportation'],
   openGraph: {
     title: 'Transport Services - Local, Long Distance & Specialized',
@@ -47,7 +47,7 @@ export default function ServicesPage() {
         'Secure handling'
       ],
       coverage: 'Local and regional coverage',
-      vehicles: '3.5ton vans, 7.5ton lorries',
+      vehicles: '3.5 tonne vans, 7.5 tonne lorries',
       suitableFor: [
         'Construction materials',
         'Commercial goods',
@@ -64,12 +64,12 @@ export default function ServicesPage() {
         'UK-wide coverage',
         'Updates by phone only',
         'Real-time customer updates',
-        'Full transit insurance',
+        'Full Goods in Transit Insurance',
         'No geographical limitations',
         'Secure handling'
       ],
       coverage: 'Nationwide UK coverage',
-      vehicles: '18ton lorries, 44ton Arctics',
+      vehicles: '18 tonne lorries, 44 tonne Arctics',
       suitableFor: [
         'Construction materials',
         'Heavy machinery',
@@ -81,23 +81,23 @@ export default function ServicesPage() {
     {
       title: 'Specialized Loads',
       icon: Construction,
-      description: 'Expert handling of all types of specialized loads including abnormal loads with no weight or size limitations.',
+      description: 'Expert handling of all types of specialized loads with professional equipment and experienced drivers.',
       features: [
-        'Oversized loads requiring permits',
-        'Escort services if required',
         'Specialized equipment available',
-        'No weight/size limitations',
+        'Professional handling',
+        'Expert drivers',
         'Safety compliance',
-        'Full insurance coverage'
+        'Full insurance coverage',
+        'Secure transport'
       ],
       coverage: 'UK-wide with route planning',
-      vehicles: '44ton Arctics with specialized restraint systems',
+      vehicles: '44 tonne Arctics with specialized restraint systems',
       suitableFor: [
-        'Abnormal loads',
         'Heavy machinery',
         'Construction equipment',
         'Engineering loads',
-        'Oversized cargo'
+        'Specialized cargo',
+        'Complex loads'
       ]
     }
   ];

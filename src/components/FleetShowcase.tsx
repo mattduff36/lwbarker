@@ -8,36 +8,36 @@ import AnimatedSection from './AnimatedSection';
 const FleetShowcase: React.FC = () => {
   const fleetVehicles = [
     {
-      name: '3.5 Ton Van',
+      name: '3.5 tonne Van',
       icon: Box,
-      capacity: 'Typical payload: 1.0 – 1.5 tonnes',
+      capacity: 'Typical payload: 1 – 1.5 tonne',
       description: 'Versatile vans in various configurations',
       features: ['Urban friendly', 'Versatile', 'Cost-effective'],
       suitable: 'Various applications for local and regional transport'
     },
     {
-      name: '7.5 Ton Lorry',
+      name: '7.5 tonne Lorry',
       icon: Boxes,
-      capacity: 'Typical payload: 3.5 – 4.5 tonnes',
+      capacity: 'Typical payload: 3 tonnes',
       description: 'Our lorries provide reliable mid-range capacity',
       features: ['Versatile design', 'Reliable', 'Efficient'],
       suitable: 'Construction materials, commercial goods, steel, pallets'
     },
     {
-      name: '18 Ton Lorry',
+      name: '18 tonne Lorry',
       icon: Container,
-      capacity: 'Typical payload: 10 – 11.5 tonnes',
-      description: 'Heavy-duty transport with our 18 ton lorries',
+      capacity: 'Typical payload: 10 tonnes',
+      description: 'Heavy-duty transport with our 18 tonne lorries',
       features: ['Powerful', 'Durable', 'Professional'],
       suitable: 'Construction materials, heavy machinery, engineering loads'
     },
     {
-      name: '44 Ton Arctic',
+      name: '44 tonne Arctic',
       icon: Warehouse,
-      capacity: 'Typical payload: 28 – 30 tonnes',
+      capacity: 'Typical payload: 28 tonnes',
       description: 'Arctic vehicles with specialized restraint systems',
       features: ['Maximum capacity', 'Long-distance', 'Specialized'],
-      suitable: 'Heavy loads up to 30 tonnes, specialized transport needs'
+      suitable: 'Heavy loads up to 28 tonnes, specialized transport needs'
     }
   ];
 

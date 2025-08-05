@@ -10,7 +10,7 @@ export interface EmailResponse {
 
 // Email configuration constants
 export const EMAIL_CONFIG = {
-  to: process.env.CONTACT_EMAIL || 'lee@lwbarkertransport.com',
+      to: process.env.CONTACT_EMAIL || 'traffic@lwbarkertransport.com',
   subject: 'New Contact Form Submission - L.W. Barker Transport Services',
   replyTo: 'noreply@lwbarkertransport.com',
 }; 

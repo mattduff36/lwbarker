@@ -11,10 +11,10 @@ const StructuredData: React.FC<StructuredDataProps> = ({ page = 'home' }) => {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "L.W. Barker Transport Services LTD",
-      "description": "Family-run business since 2004 providing professional transport solutions with vehicles from 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services across the UK.",
+      "description": "Family-run business since 2004 providing professional transport solutions with vehicles from 3.5 tonne vans to 44 tonne articulated lorries. Local, long distance and specialized transport services across the UK.",
       "url": "https://lwbarkertransport.com",
       "telephone": "+441636402360",
-      "email": "lee@lwbarkertransport.com",
+      "email": "traffic@lwbarkertransport.com",
       "address": {
         "@type": "PostalAddress",
         "postalCode": "NG24 1DW",
@@ -171,7 +171,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ page = 'home' }) => {
           {
             "@type": "ContactPoint",
             "telephone": "+441636402360",
-            "email": "lee@lwbarkertransport.com",
+            "email": "traffic@lwbarkertransport.com",
             "contactType": "customer service",
             "availableLanguage": "English",
             "hoursAvailable": [

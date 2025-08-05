@@ -5,11 +5,11 @@ import StructuredData from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Contact Us - Get Your Transport Quote Today',
-  description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com. Professional transport solutions across the UK.',
+  description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email traffic@lwbarkertransport.com. Professional transport solutions across the UK.',
   keywords: ['contact transport company', 'transport quote', 'transport inquiry', 'UK transport contact', 'transport quote', 'transport services contact', 'professional transport inquiry'],
   openGraph: {
     title: 'Contact Us - Get Your Transport Quote Today',
-    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com.',
+    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email traffic@lwbarkertransport.com.',
     url: 'https://lwbarkertransport.com/contact',
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Us - Get Your Transport Quote Today',
-    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email lee@lwbarkertransport.com.',
+    description: 'Contact L.W. Barker Transport Services LTD for quotes and transport service inquiries. Call 01636 402360 or email traffic@lwbarkertransport.com.',
     images: ['/hero_bg5.jpg'],
   },
   alternates: {
@@ -71,7 +71,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-brand-black">Email</h3>
-                    <p className="text-gray-600">lee@lwbarkertransport.com</p>
+                    <p className="text-gray-600">traffic@lwbarkertransport.com</p>
                     <p className="text-sm text-gray-500">For quotes and general inquiries</p>
                   </div>
                 </div>

@@ -185,15 +185,15 @@ const Hero: React.FC = () => {
                 <span className="text-lwb-orange-500 icon-hover">
                   <Mail size={16} />
                 </span>
-                <a href="mailto:lee@lwbarkertransport.com" className="link-hover">
-                  lee@lwbarkertransport.com
+                <a href="mailto:traffic@lwbarkertransport.com" className="link-hover">
+                  traffic@lwbarkertransport.com
                 </a>
               </div>
               <div className="flex items-center space-x-2 transition-all duration-300 hover:scale-105">
                 <span className="text-lwb-orange-500 icon-hover">
                   <MapPin size={16} />
                 </span>
-                <span>Based in Newark NG24</span>
+                <span>Based in Newark, Nottinghamshire</span>
               </div>
             </div>
           </div>

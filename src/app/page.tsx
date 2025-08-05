@@ -8,11 +8,11 @@ import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Professional Transport Services | UK-Wide Coverage',
-  description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries. Local, long distance and specialized transport services.',
+  description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5 tonne vans to 44 tonne articulated lorries. Local, long distance and specialized transport services.',
   keywords: ['transport UK', 'professional transport services', 'UK transport company', 'logistics services', 'haulage services', 'local transport', 'long distance transport', 'specialized transport', 'vehicle transportation'],
       openGraph: {
       title: 'Professional Transport Services | UK-Wide Coverage',
-      description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries.',
+      description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5 tonne vans to 44 tonne articulated lorries.',
     url: 'https://lwbarkertransport.com',
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Professional Transport Services | UK-Wide Coverage',
-    description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5-ton vans to 44-ton articulated lorries.',
+    description: 'L.W. Barker Transport Services LTD offers professional transport solutions across the UK. From 3.5 tonne vans to 44 tonne articulated lorries.',
     images: ['/hero_bg1.jpg'],
   },
   alternates: {

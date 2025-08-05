@@ -5,11 +5,11 @@ import { Box, Boxes, Container, Warehouse, Wrench, Shield, User } from 'lucide-r
 
 export const metadata: Metadata = {
   title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-  description: 'Comprehensive fleet of professional transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for local, long distance and specialized transport across the UK.',
-  keywords: ['transport fleet', 'vehicles', '3.5-ton vans', '7.5-ton lorry', '18-ton lorry', '44-ton articulated lorries', 'professional vehicles', 'transport equipment', 'UK transport fleet'],
+  description: 'Comprehensive fleet of professional transport vehicles from 3.5 tonne vans to 44 tonne articulated lorries. Modern, well-maintained vehicles for local, long distance and specialized transport across the UK.',
+  keywords: ['transport fleet', 'vehicles', '3.5 tonne vans', '7.5 tonne lorry', '18 tonne lorry', '44 tonne articulated lorries', 'professional vehicles', 'transport equipment', 'UK transport fleet'],
   openGraph: {
     title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-    description: 'Comprehensive fleet of professional transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
+    description: 'Comprehensive fleet of professional transport vehicles from 3.5 tonne vans to 44 tonne articulated lorries. Modern, well-maintained vehicles for all transport needs.',
     url: 'https://lwbarkertransport.com/fleet',
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Our Fleet - Professional Transport Vehicles for Every Need',
-    description: 'Comprehensive fleet of professional transport vehicles from 3.5-ton vans to 44-ton articulated lorries. Modern, well-maintained vehicles for all transport needs.',
+    description: 'Comprehensive fleet of professional transport vehicles from 3.5 tonne vans to 44 tonne articulated lorries. Modern, well-maintained vehicles for all transport needs.',
     images: ['/hero_bg3.jpg'],
   },
   alternates: {
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
 export default function FleetPage() {
   const fleetVehicles = [
     {
-      name: '3.5 Ton Van',
+      name: '3.5 tonne Van',
       icon: Box,
-      capacity: 'Typical payload: 1.0 – 1.5 tonnes',
+      capacity: 'Typical payload: 1 – 1.5 tonne',
       dimensions: 'Various dimensions',
-      description: 'We operate versatile 3.5 ton vans in various configurations for a wide range of applications.',
+      description: 'We operate versatile 3.5 tonne vans in various configurations for a wide range of applications.',
       features: [
         'Various configurations',
         'Excellent maneuverability',
@@ -59,11 +59,11 @@ export default function FleetPage() {
       availability: 'Available 24/7'
     },
     {
-      name: '7.5 Ton Lorry',
+      name: '7.5 tonne Lorry',
       icon: Boxes,
-      capacity: 'Typical payload: 3.5 – 4.5 tonnes',
+      capacity: 'Typical payload: 3 tonnes',
       dimensions: 'Versatile configuration',
-      description: 'Our 7.5 ton lorries provide reliable mid-range capacity for construction materials and commercial goods.',
+      description: 'Our 7.5 tonne lorries provide reliable mid-range capacity for construction materials and commercial goods.',
       features: [
         'Versatile design',
         'Versatile payload capacity',
@@ -84,11 +84,11 @@ export default function FleetPage() {
       availability: 'Available 24/7'
     },
     {
-      name: '18 Ton Lorry',
+      name: '18 tonne Lorry',
       icon: Container,
-      capacity: 'Typical payload: 10 – 11.5 tonnes',
-      dimensions: 'Heavy-duty design',
-      description: 'Our 18 ton lorries provide heavy-duty transport for construction materials, heavy machinery, and engineering loads.',
+      capacity: 'Typical payload: 10 tonnes',
+      dimensions: '',
+      description: 'Our 18 tonne lorries provide heavy-duty transport for construction materials, heavy machinery, and engineering loads.',
       features: [
         'Heavy-duty construction',
         'Large cargo area',
@@ -109,10 +109,10 @@ export default function FleetPage() {
       availability: 'Available 24/7'
     },
     {
-      name: '44 Ton Arctic',
+      name: '44 tonne Arctic',
       icon: Warehouse,
-      capacity: 'Typical payload: 28 – 30 tonnes',
-      dimensions: 'Maximum legal dimensions',
+      capacity: 'Typical payload: 28 tonnes',
+      dimensions: '',
       description: 'Our Arctic vehicles with specialized restraint systems can handle heavy loads across the UK.',
       features: [
         'Specialized restraint systems',
@@ -120,7 +120,7 @@ export default function FleetPage() {
         'Long-distance capability',
         'Expert drivers',
         'Full insurance coverage',
-        'Maximum payload: 30 tonnes'
+        'Maximum payload: 28 tonnes'
       ],
       applications: [
         'Heavy machinery transport',
@@ -180,9 +180,11 @@ export default function FleetPage() {
                       <p className="text-brand-grey">
                         <span className="font-medium">Capacity:</span> {vehicle.capacity}
                       </p>
-                      <p className="text-brand-grey">
-                        <span className="font-medium">Dimensions:</span> {vehicle.dimensions}
-                      </p>
+                      {vehicle.dimensions && (
+                        <p className="text-brand-grey">
+                          <span className="font-medium">Dimensions:</span> {vehicle.dimensions}
+                        </p>
+                      )}
                       <p className="text-brand-grey">
                         <span className="font-medium">Coverage:</span> {vehicle.coverage}
                       </p>

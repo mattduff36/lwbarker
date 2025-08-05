@@ -62,7 +62,7 @@ export default function AccessibilityPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 mb-6">
               <li>Phone: <a href="tel:01636402360" className="text-lwb-orange-500 hover:text-lwb-orange-700 transition-colors">01636 402360</a></li>
-              <li>Email: <a href="mailto:lee@lwbarkertransport.com" className="text-lwb-orange-500 hover:text-lwb-orange-700 transition-colors">lee@lwbarkertransport.com</a></li>
+              <li>Email: <a href="mailto:traffic@lwbarkertransport.com" className="text-lwb-orange-500 hover:text-lwb-orange-700 transition-colors">traffic@lwbarkertransport.com</a></li>
               <li>Contact form: <Link href="/contact" className="text-lwb-orange-500 hover:text-lwb-orange-700 transition-colors">Contact Us</Link></li>
             </ul>
             <p>

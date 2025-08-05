@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import { Shield, Target, Zap, Briefcase, MapPin, Globe, Construction, Phone, Mail } from 'lucide-react'
+import { MapPin, Globe, Construction, Phone, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Us - Professional Transport Company Since 2004',
@@ -39,28 +39,7 @@ export default function AboutPage() {
     { value: '900k', label: 'Annual Miles' }
   ];
 
-  const teamValues = [
-    {
-      icon: Shield,
-      title: 'Safety',
-      description: 'All our drivers are fully licensed and experienced, with excellent safety records and comprehensive insurance coverage.'
-    },
-    {
-      icon: Target,
-      title: 'Reliability',
-      description: 'We pride ourselves on being reliable and punctual, ensuring your goods are delivered on time, every time.'
-    },
-    {
-      icon: Zap,
-      title: 'Communication',
-      description: 'We maintain clear communication throughout the transport process, providing real-time updates by phone.'
-    },
-    {
-      icon: Briefcase,
-      title: 'Flexibility',
-      description: 'We&apos;ll sort it. Nothing is ever a problem - our flexible approach ensures we meet your specific requirements.'
-    }
-  ];
+
 
   return (
     <Layout>
@@ -86,7 +65,7 @@ export default function AboutPage() {
                 </p>
                 <p className="text-brand-grey leading-relaxed">
                   Today, with 21 years of experience, we&apos;ve grown to operate a diverse fleet of vehicles and employ skilled drivers, covering hundreds of thousands of
-                  miles annually. We pride ourselves in offering complete transport solutions, from 3.5-ton vans to 44-ton articulated lorries.
+                  miles annually. We pride ourselves in offering complete transport solutions, from 3.5 tonne vans to 44 tonne articulated lorries.
                 </p>
               </div>
               <div className="text-center">
@@ -135,22 +114,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Team Values */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-brand-black mb-8 text-center">Our Values</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {teamValues.map((value, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg border border-lwb-grey-200 shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-lwb-orange-500 mb-4 flex justify-center">
-                    <value.icon size={48} />
-                  </div>
-                  <h3 className="text-lg font-semibold text-brand-black mb-3">{value.title}</h3>
-                  <p className="text-brand-grey text-sm leading-relaxed">{value.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Services Overview */}
           <div className="bg-lwb-grey-50 p-8 rounded-lg border border-lwb-grey-200 mb-12">
             <h2 className="text-3xl font-bold text-brand-black mb-6 text-center">What We Offer</h2>
@@ -174,7 +137,7 @@ export default function AboutPage() {
                   <Construction size={48} />
                 </div>
                 <h3 className="text-lg font-semibold text-brand-black mb-2">Specialized Loads</h3>
-                <p className="text-brand-grey text-sm">Expert handling of oversized and complex load requirements</p>
+                <p className="text-brand-grey text-sm">Expert handling of specialized and complex load requirements</p>
               </div>
             </div>
             <div className="text-center mt-8">
@@ -213,8 +176,8 @@ export default function AboutPage() {
                   <Mail size={32} />
                 </div>
                 <h3 className="font-semibold text-brand-black mb-1">Email</h3>
-                <a href="mailto:lee@lwbarkertransport.com" className="text-brand-orange hover:text-lwb-orange-600">
-                  lee@lwbarkertransport.com
+                <a href="mailto:traffic@lwbarkertransport.com" className="text-brand-orange hover:text-lwb-orange-600">
+                  traffic@lwbarkertransport.com
                 </a>
               </div>
               <div className="text-center">
